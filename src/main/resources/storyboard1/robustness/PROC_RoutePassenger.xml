@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robustnessAnnotation>
+	<process name="PROC_RoutePassenger.xml">
+		<activity name="RP_EnterInRouteEnsemble" compensable="true" deterministic="false" write="true" robustness="95"/>
+	</process>
+	<process name="PROC_RoutePassenger.xml">
+		<activity name="RP_CheckInOnRoute" compensable="true" deterministic="false" write="true" robustness="92"/>
+	</process>
+	<process name="PROC_RoutePassenger.xml">
+		<activity name="RP_ExitFromRouteEnsemble" compensable="true" deterministic="false" write="true" robustness="94"/>
+	</process>
+</robustnessAnnotation>

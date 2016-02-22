@@ -1,0 +1,42 @@
+node {
+    size: 0px;
+    fill-color: rgba(255,0,0,128);
+    text-mode: hidden;
+    z-index: 0;
+}
+
+edge.notin {
+    shape: line;
+    fill-color: rgba(150, 150, 150, 255);
+    size: 0.5px;
+}
+
+edge.car {
+    shape: line;
+    fill-color: rgba(0, 255, 0, 255);
+    size: 2.5px;
+}
+
+edge.bicycle {
+    shape: line;
+    fill-color: rgba(255, 0, 0, 255);
+    size: 2.5px;
+}
+
+edge.bus {
+    shape: line;
+    fill-color: rgba(0, 0, 255, 255);
+    size: 2.5px;
+}
+
+edge.walk {
+    shape: line;
+    fill-color: rgba(255, 0, 255, 255);
+    size: 2.5px;
+}
+
+edge.train {
+    shape: line;
+    fill-color: rgba(0, 255, 255, 255);
+    size: 2.5px;
+}

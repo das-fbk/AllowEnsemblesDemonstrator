@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robustnessAnnotation>
+	<fragment name="RP_confirmBooking.xml">
+		<activity name="RP_ConfirmationRequest" compensable="true" deterministic="false" write="true" robustness="93"/>
+	</fragment>
+	<fragment name="RP_confirmBooking.xml">
+		<activity name="RP_PayTicket" compensable="true" deterministic="false" write="true" robustness="93"/>
+	</fragment>
+	<fragment name="RP_confirmBooking.xml">
+		<activity name="RP_ConfirmationStatus" compensable="true" deterministic="false" write="true" robustness="90"/>
+	</fragment>
+</robustnessAnnotation>

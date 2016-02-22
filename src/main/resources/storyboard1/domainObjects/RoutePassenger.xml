@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:domainObject name="RoutePassenger" xmlns:tns="http://das.fbk.eu/DomainObject" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://das.fbk.eu/DomainObject ../../../schema/allow-ensembles/DomainObject.xsd ">
+  
+  <tns:domainKnowledge>
+    <tns:internalDomainProperty name="domainProperties/RoutePassengerStatus"/>
+    <tns:externalDomainProperty name="domainProperties/HandleRoute"/>
+  </tns:domainKnowledge>
+    
+  <tns:process name="processes/PROC_RoutePassenger"/>
+  
+  <tns:fragment name="fragments/RP_setupPassengerDetails"/>
+  <tns:fragment name="fragments/RP_checkInAtPickupPoint"/>
+  <tns:fragment name="fragments/RP_checkInOnFlexibus"/>
+  <tns:fragment name="fragments/RP_checkOutFromFlexibus"/>
+  
+</tns:domainObject>

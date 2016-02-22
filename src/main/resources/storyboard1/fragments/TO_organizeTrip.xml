@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:fragment id="TO_organizeTrip" xmlns:tns="http://das.fbk.eu/Fragment"
+	xmlns:tns1="http://das.fbk.eu/Annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://das.fbk.eu/Fragment Fragment.xsd ">
+
+
+	<tns:state isInitial="true" name="ST0" />
+	<tns:state name="ST1" />
+	<tns:state name="ST2" />
+	<tns:state name="ST3" />
+
+	<tns:action name="TO_ChosenTrip" actionType="input">
+		<tns:precondition>
+			<tns1:point>
+				<tns1:domainProperty dp_name="SetupTrip">
+					<tns1:state>INITIAL</tns1:state>
+				</tns1:domainProperty>
+			</tns1:point>
+		</tns:precondition>
+	</tns:action>
+
+	<tns:action name="TO_DefineGoal" actionType="output">
+	</tns:action>
+
+	<tns:action name="TO_HOAAorganizeTrip" actionType="abstract">
+		<tns:goal>
+			<tns1:point>
+<!-- 				This is the goal for the car sharing trip plan -->
+<!-- 				<tns1:domainProperty dp_name="CarSharingTrip"> -->
+<!-- 					<tns1:state> -->
+<!-- 						RESERVATION_COMPLETED -->
+<!-- 					</tns1:state> -->
+<!-- 				</tns1:domainProperty> -->
+
+<!-- 				This is the goal for the flexibus trip plan -->
+				<tns1:domainProperty dp_name="FlexibusTrip" >
+					<tns1:state>
+						TRIP_BOOKED
+					</tns1:state>
+				</tns1:domainProperty>
+
+<!-- 				This is the goal for the train trip plan -->
+<!-- 				<tns1:domainProperty dp_name="TrainTrip"> -->
+<!-- 					<tns1:state> -->
+<!-- 						TRIP_BOOKED -->
+<!-- 					</tns1:state> -->
+<!-- 				</tns1:domainProperty> -->
+
+				<!-- This is the goal for the bike sharing trip plan -->
+<!-- 				<tns1:domainProperty dp_name="BikeSharingTrip"> -->
+<!-- 					<tns1:state> -->
+<!-- 						USER_REGISTERED -->
+<!-- 					</tns1:state> -->
+<!-- 				</tns1:domainProperty> -->
+			</tns1:point>
+		</tns:goal>
+
+		<tns:effect>
+			<tns1:event dpName="SetupTrip" eventName="tripOrganized"></tns1:event>
+		</tns:effect>
+	</tns:action>
+
+	<tns:transition>
+		<tns:initialState>ST0</tns:initialState>
+		<tns:finalState>ST1</tns:finalState>
+		<tns:action name="TO_ChosenTrip" actionType="input" />
+	</tns:transition>
+
+	<tns:transition>
+		<tns:initialState>ST1</tns:initialState>
+		<tns:finalState>ST2</tns:finalState>
+		<tns:action name="TO_DefineGoal" actionType="output" />
+	</tns:transition>
+
+	<tns:transition>
+		<tns:initialState>ST2</tns:initialState>
+		<tns:finalState>ST3</tns:finalState>
+		<tns:action name="TO_HOAAorganizeTrip" actionType="abstract" />
+	</tns:transition>
+
+</tns:fragment>

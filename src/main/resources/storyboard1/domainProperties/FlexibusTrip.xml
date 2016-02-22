@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:domainProperty id="FlexibusTrip" xmlns:tns="http://das.fbk.eu/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://das.fbk.eu/DomainProperty ../../../schema/allow-ensembles/DomainProperty.xsd ">
+  
+  <tns:state isInitial="true">INITIAL</tns:state>
+  <tns:state>USER_REGISTERED</tns:state>
+  <tns:state>USER_LOGGED_IN</tns:state>
+  <tns:state>TRIP_BOOKED</tns:state>
+  <tns:state>DRIVER_LOGGED_IN</tns:state>
+  <tns:state>ROUTE_ASSIGNED</tns:state>
+  <tns:state>ROUTE_COMPLETED</tns:state>
+  
+  <tns:event>userRegistration</tns:event>
+  <tns:event>userLogin</tns:event> 
+  <tns:event>tripBooking</tns:event>
+  <tns:event>driverLogin</tns:event>
+  <tns:event>routeAssignment</tns:event>
+  <tns:event>closeRoute</tns:event>
+  
+  
+  <tns:transition isControllable="true">
+    <tns:from>INITIAL</tns:from>
+    <tns:to>USER_REGISTERED</tns:to>
+    <tns:event>userRegistration</tns:event>
+  </tns:transition>
+  
+  <tns:transition isControllable="true">
+    <tns:from>USER_REGISTERED</tns:from>
+    <tns:to>USER_LOGGED_IN</tns:to>
+    <tns:event>userLogin</tns:event>
+  </tns:transition>
+  
+  <tns:transition isControllable="true">
+    <tns:from>USER_LOGGED_IN</tns:from>
+    <tns:to>TRIP_BOOKED</tns:to>
+    <tns:event>tripBooking</tns:event>
+  </tns:transition>
+  
+  <tns:transition isControllable="true">
+    <tns:from>INITIAL</tns:from>
+    <tns:to>DRIVER_LOGGED_IN</tns:to>
+    <tns:event>driverLogin</tns:event>
+  </tns:transition>
+  
+   <tns:transition isControllable="true">
+    <tns:from>DRIVER_LOGGED_IN</tns:from>
+    <tns:to>ROUTE_ASSIGNED</tns:to>
+    <tns:event>routeAssignment</tns:event>
+  </tns:transition>
+  
+  <tns:transition isControllable="true">
+    <tns:from>ROUTE_ASSIGNED</tns:from>
+    <tns:to>ROUTE_COMPLETED</tns:to>
+    <tns:event>closeRoute</tns:event>
+  </tns:transition>
+  
+</tns:domainProperty>

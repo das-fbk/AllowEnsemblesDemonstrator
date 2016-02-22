@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robustnessAnnotation>
+	<process name="PROC_RouteManagement.xml">
+		<activity name="RM_EnterInFBCensemble" compensable="true" deterministic="false" write="true" robustness="98"/>
+	</process>
+	<process name="PROC_RouteManagement.xml">
+		<activity name="RM_CreateRouteEnsemble" compensable="true" deterministic="false" write="true" robustness="99"/>
+	</process>
+	<process name="PROC_RouteManagement.xml">
+		<activity name="RM_EnterInRouteEnsemble" compensable="true" deterministic="false" write="true" robustness="94"/>
+	</process>
+	<process name="PROC_RouteManagement.xml">
+		<activity name="RM_AssignDriver" compensable="true" deterministic="false" write="true" robustness="97"/>
+	</process>
+	<process name="PROC_RouteManagement.xml">
+		<activity name="RM_UnlockWaitingPassenger" compensable="true" deterministic="false" write="true" robustness="90"/>
+	</process>
+	<process name="PROC_RouteManagement.xml">
+		<activity name="RM_AssignPickupPoint" compensable="true" deterministic="false" write="true" robustness="92"/>
+	</process>
+	<process name="PROC_RouteManagement.xml">
+		<activity name="RM_RouteSoldOut" compensable="true" deterministic="false" write="true" robustness="93"/>
+	</process>
+	<process name="PROC_RouteManagement.xml">
+		<activity name="RM_CheckInExecuted" compensable="true" deterministic="false" write="true" robustness="98"/>
+	</process>
+	<process name="PROC_RouteManagement.xml">
+		<activity name="RM_CheckinEnded" compensable="true" deterministic="true" write="false" robustness="98"/>
+	</process>
+	<process name="PROC_RouteManagement.xml">
+		<activity name="RM_ExitFromRouteEnsemble" compensable="true" deterministic="false" write="true" robustness="99"/>
+	</process>
+	<process name="PROC_RouteManagement.xml">
+		<activity name="RM_DestroyRouteEnsemble" compensable="true" deterministic="false" write="true" robustness="97"/>
+	</process>
+</robustnessAnnotation>

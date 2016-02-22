@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:domainObject name="BikeSharingCompany" xmlns:tns="http://das.fbk.eu/DomainObject" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://das.fbk.eu/DomainObject ../../../schema/allow-ensembles/DomainObject.xsd ">
+  
+  <tns:domainKnowledge>
+    <tns:internalDomainProperty name="domainProperties/BikeSharingTrip"/>
+    <tns:externalDomainProperty name="domainProperties/HandleSmartMobilityCard"/>
+  </tns:domainKnowledge>
+    
+  <tns:process name="processes/PROC_BikeSharingCompany"/>
+  
+  <tns:fragment name="fragments/BS_userRegistration"/>
+  
+</tns:domainObject>

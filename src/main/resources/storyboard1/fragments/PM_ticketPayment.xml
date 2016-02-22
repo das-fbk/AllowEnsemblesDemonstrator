@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:fragment id="PM_ticketPayment" xmlns:tns="http://das.fbk.eu/Fragment"
+	xmlns:tns1="http://das.fbk.eu/Annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://das.fbk.eu/Fragment Fragment.xsd ">
+
+	<tns:state isInitial="true" name="ST0" />
+	<tns:state name="ST1" />
+	<tns:state name="ST2" />
+	<tns:state name="ST3" />
+
+	<tns:action name="PM_PaymentRequest" actionType="input">
+		<tns:precondition>
+			<tns1:point>
+				<tns1:domainProperty dp_name="HandlePayment">
+					<tns1:state>INITIAL</tns1:state>
+				</tns1:domainProperty>
+			</tns1:point>
+		</tns:precondition>
+	</tns:action>
+
+	<tns:action name="PM_ExecutePayment" actionType="abstract">
+		<tns:goal>
+			<tns1:point>
+<!-- 				This is the goal for the credit card payment -->
+<!-- 				<tns1:domainProperty dp_name="CreditCardPayment"> -->
+<!-- 					<tns1:state> -->
+<!-- 						CC_PAYMENT_EXECUTED -->
+<!-- 					</tns1:state> -->
+<!-- 				</tns1:domainProperty> -->
+				
+<!-- 				This is the goal for the pay pal payment -->				
+				<tns1:domainProperty dp_name="PayPalPayment">
+					<tns1:state>
+						PP_PAYMENT_EXECUTED
+					</tns1:state>
+				</tns1:domainProperty>
+			</tns1:point>
+		</tns:goal>
+		
+<!-- 		<tns:effect> -->
+<!-- 			<tns1:event dpName="CreditCardPayment" eventName="reset"></tns1:event> -->
+<!-- 		</tns:effect> -->
+		
+		<tns:effect>
+			<tns1:event dpName="PayPalPayment" eventName="reset"></tns1:event>
+		</tns:effect>
+		
+	</tns:action>
+
+	<tns:action name="PM_PaymentReply" actionType="output">
+		<tns:effect>
+			<tns1:event dpName="HandlePayment" eventName="executePayment"></tns1:event>
+		</tns:effect>
+	</tns:action>
+
+	<tns:transition>
+		<tns:initialState>ST0</tns:initialState>
+		<tns:finalState>ST1</tns:finalState>
+		<tns:action name="PM_PaymentRequest" actionType="input" />
+	</tns:transition>
+	
+	<tns:transition>
+		<tns:initialState>ST1</tns:initialState>
+		<tns:finalState>ST2</tns:finalState>
+		<tns:action name="PM_ExecutePayment" actionType="abstract" />
+	</tns:transition>
+
+	<tns:transition>
+		<tns:initialState>ST2</tns:initialState>
+		<tns:finalState>ST3</tns:finalState>
+		<tns:action name="PM_PaymentReply" actionType="output" />
+	</tns:transition>
+
+	<tns:consumerEntityType>TripOrganization</tns:consumerEntityType>
+</tns:fragment>

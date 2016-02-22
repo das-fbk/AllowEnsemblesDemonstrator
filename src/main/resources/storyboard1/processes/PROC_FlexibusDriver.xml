@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:process role="true" name="FlexibusDriver_Core" xmlns:tns="http://das.fbk.eu/Process"
+	xmlns:tns1="http://das.fbk.eu/Annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://das.fbk.eu/Process Process.xsd ">
+
+	<tns:receive name="FD_TakeFlexibusRequest">
+		<tns:precondition>
+			<tns1:point>
+				<tns1:domainProperty dp_name="FlexibusDriverStatus">
+					<tns1:state>INITIAL</tns1:state>
+				</tns1:domainProperty>
+			</tns1:point>
+		</tns:precondition>
+	</tns:receive>
+	<tns:concrete name="FD_EnterInRouteEnsemble" />
+	<tns:invoke name="FD_TakeFlexibusReply">
+		<tns:effect>
+			<tns1:event dpName="FlexibusDriverStatus" eventName="flexibusCaught"></tns1:event>
+		</tns:effect>
+	</tns:invoke>
+	<tns:receive name="FD_ExecuteRouteRequest">
+		<tns:precondition>
+			<tns1:point>
+				<tns1:domainProperty dp_name="FlexibusDriverStatus">
+					<tns1:state>FLEXIBUS_TAKEN</tns1:state>
+				</tns1:domainProperty>
+			</tns1:point>
+		</tns:precondition>
+	</tns:receive>
+	<tns:scope name="scope1">
+		<tns:abstract name="FD_StartRoute">
+			<tns:goal>
+				<tns1:point>
+					<tns1:domainProperty dp_name="HandleRoute">
+						<tns1:state>
+							ROUTE_STARTED
+						</tns1:state>
+					</tns1:domainProperty>
+				</tns1:point>
+			</tns:goal>
+		</tns:abstract>
+		<tns:invoke name="FD_RouteStartedNotice">
+			<tns:effect>
+				<tns1:event dpName="FlexibusDriverStatus" eventName="startRoute"></tns1:event>
+			</tns:effect>
+		</tns:invoke>
+		<tns:while name="FD_mainWhile">
+			<tns:contextCondition>
+				<tns1:point>
+					<tns1:domainProperty dp_name="FlexibusDriverStatus">
+						<tns1:state>ROUTE_STARTED</tns1:state>
+					</tns1:domainProperty>
+				</tns1:point>
+			</tns:contextCondition>
+			<tns:concrete name="FD_GoToNextPickupPoint" />
+			<tns:concrete name="FD_PickupPointReached">
+				<tns:effect>
+					<tns1:event dpName="FlexibusDriverStatus" eventName="goToPickupPoint"></tns1:event>
+				</tns:effect>
+			</tns:concrete>
+			<tns:concrete name="FD_AllPassengersOnBoard">
+			</tns:concrete>
+			<tns:concrete name="FD_AnimateGoToNextPickupPoint" />			
+			<tns:concrete name="FD_AllPickupPointReached">
+			</tns:concrete>
+		</tns:while>
+		<tns:invoke name="FD_AllPickupPointsCoveredNotice">
+		</tns:invoke>
+		<tns:concrete name="FD_WaitForPassengersCheckOut" />
+		<tns:abstract name="FD_EndRoute">
+			<tns:goal>
+				<tns1:point>
+					<tns1:domainProperty dp_name="HandleRoute">
+						<tns1:state>
+							ROUTE_COMPLETED
+						</tns1:state>
+					</tns1:domainProperty>
+				</tns1:point>
+			</tns:goal>
+		</tns:abstract>
+		<tns:invoke name="FD_ExecuteRouteReply">
+			<tns:effect>
+				<tns1:event dpName="FlexibusDriverStatus" eventName="endRoute"></tns1:event>
+			</tns:effect>
+		</tns:invoke>
+		<tns:concrete name="FD_RouteClosedNotice">
+		</tns:concrete>
+		<tns:receive name="FD_CloseRouteNotificationRequest">
+			<tns:precondition>
+				<tns1:point>
+					<tns1:domainProperty dp_name="FlexibusDriverStatus">
+						<tns1:state>ROUTE_ENDED</tns1:state>
+					</tns1:domainProperty>
+				</tns1:point>
+			</tns:precondition>
+		</tns:receive>
+		<tns:invoke name="FD_CloseRouteNotificationReply">
+			<tns:effect>
+				<tns1:event dpName="FlexibusDriverStatus" eventName="closeRoute"></tns1:event>
+			</tns:effect>
+		</tns:invoke>
+		<tns:concrete name="FD_ExitFromRouteEnsemble" />
+
+		<tns:eventHandler>
+			<tns:onExternalEvent onEventName="FlexibusDelay" />
+			<tns:triggerEvent name="InternalFlexibusDelay" />
+		</tns:eventHandler>
+		<!-- <tns:eventHandler> -->
+		<!-- <tns:onDPchange dpName="FlexibusDriverStatus" state="flexibus_broken" 
+			/> -->
+		<!-- <tns:triggerEvent name="???" /> -->
+		<!-- </tns:eventHandler> -->
+
+		<!-- <tns:eventHandler> -->
+		<!-- <tns:onExternalEvent onEventName="DriverRouteInterrupted" /> -->
+		<!-- <tns:dpChange dpName="FlexibusDriverStatus" eventName="delayOnStartedRoute" 
+			/> -->
+		<!-- </tns:eventHandler> -->
+	</tns:scope>
+</tns:process>

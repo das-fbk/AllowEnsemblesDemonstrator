@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robustnessAnnotation>
+	<fragment name="FD_executeFlexibusRoute.xml">
+		<activity name="FD_ExecuteRouteRequest" compensable="true" deterministic="false" write="true" robustness="91"/>
+	</fragment>
+	<fragment name="FD_executeFlexibusRoute.xml">
+		<activity name="FD_RouteStartedNotice" compensable="true" deterministic="true" write="false" robustness="96"/>
+	</fragment>
+	<fragment name="FD_executeFlexibusRoute.xml">
+		<activity name="FD_AllPickupPointsCoveredNotice" compensable="true" deterministic="false" write="true" robustness="99"/>
+	</fragment>
+	<fragment name="FD_executeFlexibusRoute.xml">
+		<activity name="FD_ExecuteRouteReply" compensable="true" deterministic="false" write="true" robustness="99"/>
+	</fragment>
+</robustnessAnnotation>

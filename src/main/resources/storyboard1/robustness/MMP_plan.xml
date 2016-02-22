@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robustnessAnnotation>
+	<fragment name="MMP_plan.xml">
+		<activity name="MMP_PlanRequest" compensable="true" deterministic="false" write="true" robustness="95"/>
+	</fragment>
+	<fragment name="MMP_plan.xml">
+		<activity name="MMP_PlanResponse" compensable="true" deterministic="true" write="false" robustness="90"/>
+	</fragment>
+</robustnessAnnotation>

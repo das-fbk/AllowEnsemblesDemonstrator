@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified"
+	elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="routes">
+		<xs:annotation>
+			<xs:documentation>Allow Ensembles route multimodal definition. A
+				route is a set of legs with all information used by Demonstrator
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="route" maxOccurs="unbounded" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="leg" maxOccurs="unbounded"
+								minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="transportType" minOccurs="1"
+											maxOccurs="1" nillable="false">
+											<xs:complexType>
+												<xs:attribute name="type">
+													<xs:simpleType>
+														<xs:restriction base="xs:string">
+															<xs:enumeration value="walk" />
+															<xs:enumeration value="car" />
+															<xs:enumeration value="carSharing" />
+															<xs:enumeration value="train" />
+															<xs:enumeration value="bus" />
+															<xs:enumeration value="bicycle" />
+														</xs:restriction>
+													</xs:simpleType>
+												</xs:attribute>
+											</xs:complexType>
+
+										</xs:element>
+										<xs:element name="safety_parameters">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="safety_level" type="xs:integer" />
+													<xs:element name="sparseness_level" type="xs:decimal" />
+													<xs:element name="pollution_level" type="xs:integer" />
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="privacy_parameters">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="provider" type="xs:string" />
+													<xs:element name="data_request_mask" maxOccurs="1"
+														minOccurs="0">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="name" type="xs:boolean" />
+																<xs:element name="date_of_birth" type="xs:boolean" />
+																<xs:element name="address" type="xs:boolean" />
+																<xs:element name="email" type="xs:boolean" />
+																<xs:element name="phone" type="xs:boolean" />
+																<xs:element name="gps" type="xs:boolean" />
+																<xs:element name="payment_details" type="xs:boolean" />
+															</xs:all>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="geometry" type="xs:string" />
+									</xs:sequence>
+									<xs:attribute name="walkingDistance" type="xs:double" />
+									<xs:attribute name="duration" type="xs:int" />
+									<xs:attribute name="Cost" type="xs:double" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="id" type="xs:string" />
+						<xs:attribute name="color" type="xs:string" />
+						<xs:attribute name="noOfChanges" type="xs:int" />
+						<xs:attribute name="utility" type="xs:double" />
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

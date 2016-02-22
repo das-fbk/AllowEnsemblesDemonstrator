@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:process name="PayPal_Core" xmlns:tns="http://das.fbk.eu/Process"
+	xmlns:tns1="http://das.fbk.eu/Annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://das.fbk.eu/Process Process.xsd ">
+
+		<tns:receive name="PP_PaymentRequest">
+		</tns:receive>
+
+		<tns:invoke name="PP_PaymentReply">
+			<tns:effect>
+				<tns1:event dpName="PayPalPayment" eventName="executePP_Payment"></tns1:event>
+				<tns1:event dpName="PayPalPayment" eventName="reset"></tns1:event>
+			</tns:effect>
+		</tns:invoke>
+
+</tns:process>

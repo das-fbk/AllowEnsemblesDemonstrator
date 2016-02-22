@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robustnessAnnotation>
+	<fragment name="FC_driverLogin.xml">
+		<activity name="FC_DriverLoginRequest" compensable="true" deterministic="false" write="true" robustness="94"/>
+	</fragment>
+	<fragment name="FC_driverLogin.xml">
+		<activity name="FC_DriverLoginAck" compensable="true" deterministic="false" write="true" robustness="90"/>
+	</fragment>
+</robustnessAnnotation>

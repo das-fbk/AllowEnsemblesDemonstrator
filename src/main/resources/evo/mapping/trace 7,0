@@ -1,0 +1,14 @@
+osm:node:282234576;;osm:node:432847976
+osm:node:432847976;;osm:node:265753131->osm:node:432847976->1
+osm:node:265753131->osm:node:432847976->1;;osm:node:265753131
+osm:node:265753131;;osm:node:432847978
+osm:node:432847978;;osm:node:1297477261
+osm:node:1297477261;;osm:node:1297477261->osm:node:432847980->1
+osm:node:1297477261->osm:node:432847980->1;;osm:node:432847980
+osm:node:432847980;;osm:node:1297477303->osm:node:432847980->1
+osm:node:1297477303->osm:node:432847980->1;;osm:node:1297477303
+osm:node:1297477303;;osm:node:1297477232
+osm:node:1297477232;;osm:node:433486658
+osm:node:433486658;;split2atlinkfor12_54_12
+split2atlinkfor12_54_12;;osm:node:1297477252
+osm:node:1297477252;;split1atlinkfor12_55_12

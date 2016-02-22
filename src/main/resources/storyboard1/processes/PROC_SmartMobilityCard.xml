@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:process name="SmartMobilityCard_Core" xmlns:tns="http://das.fbk.eu/Process"
+	xmlns:tns1="http://das.fbk.eu/Annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://das.fbk.eu/Process Process.xsd ">
+
+	<tns:receive name="SMC_MobilityCardRequest">
+	</tns:receive>
+
+	<tns:invoke name="SMC_MobilityCardReply">
+		<tns:effect>
+			<tns1:event dpName="HandleSmartMobilityCard" eventName="smartCardReleased"></tns1:event>
+		</tns:effect>
+	</tns:invoke>
+
+	<tns:while name="SMC_while">
+		<tns:contextCondition>
+			<tns1:point>
+				<tns1:domainProperty dp_name="HandleSmartMobilityCard">
+					<tns1:state>CARD_RELEASED</tns1:state>
+				</tns1:domainProperty>
+			</tns1:point>
+		</tns:contextCondition>
+		
+		<tns:receive name="SMC_VerifyAmountRequest">
+		</tns:receive>
+
+		<tns:invoke name="SMC_VerifyAmountReply">
+			<tns:effect>
+				<tns1:event dpName="HandleSmartMobilityCard" eventName="amountVerified"></tns1:event>
+			</tns:effect>
+		</tns:invoke>
+
+		<tns:receive name="SMC_ActivateServiceRequest">
+		</tns:receive>
+
+		<tns:invoke name="SMC_ActivateServiceReply">
+			<tns:effect>
+				<tns1:event dpName="HandleSmartMobilityCard" eventName="serviceAdded"></tns1:event>
+				<tns1:event dpName="HandleSmartMobilityCard" eventName="goBack"></tns1:event>
+			</tns:effect>
+		</tns:invoke>
+
+	</tns:while>
+
+</tns:process>

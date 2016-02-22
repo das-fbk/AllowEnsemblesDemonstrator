@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robustnessAnnotation>
+	<process name="PROC_FlexibusDriver.xml">
+		<activity name="FD_EnterInRouteEnsemble" compensable="true" deterministic="false" write="true" robustness="96"/>
+	</process>
+	<process name="PROC_FlexibusDriver.xml">
+		<activity name="FD_StartRoute" compensable="true" deterministic="false" write="true" robustness="96"/>
+	</process>
+	<process name="PROC_FlexibusDriver.xml">
+		<activity name="FD_GoToNextPickupPoint" compensable="true" deterministic="true" write="false" robustness="99"/>
+	</process>
+	<process name="PROC_FlexibusDriver.xml">
+		<activity name="FD_PickupPointReached" compensable="true" deterministic="false" write="true" robustness="93"/>
+	</process>
+	<process name="PROC_FlexibusDriver.xml">
+		<activity name="FD_AllPassengersOnBoard" compensable="true" deterministic="true" write="false" robustness="95"/>
+	</process>
+	<process name="PROC_FlexibusDriver.xml">
+		<activity name="FD_AllPickupPointReached" compensable="true" deterministic="false" write="true" robustness="95"/>
+	</process>
+	<process name="PROC_FlexibusDriver.xml">
+		<activity name="FD_WaitForPassengersCheckOut" compensable="true" deterministic="false" write="false" robustness="92"/>
+	</process>
+	<process name="PROC_FlexibusDriver.xml">
+		<activity name="FD_EndRoute" compensable="true" deterministic="false" write="true" robustness="91"/>
+	</process>
+	<process name="PROC_FlexibusDriver.xml">
+		<activity name="FD_RouteClosedNotice" compensable="true" deterministic="false" write="true" robustness="94"/>
+	</process>
+	<process name="PROC_FlexibusDriver.xml">
+		<activity name="FD_ExitFromRouteEnsemble" compensable="true" deterministic="false" write="true" robustness="91"/>
+	</process>
+</robustnessAnnotation>

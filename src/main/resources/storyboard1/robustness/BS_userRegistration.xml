@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robustnessAnnotation>
+	<fragment name="BS_userRegistration.xml">
+		<activity name="BS_RegistrationRequest" compensable="true" deterministic="false" write="true" robustness="99"/>
+	</fragment>
+	<fragment name="BS_userRegistration.xml">
+		<activity name="BS_UpdateSmartMobilityCard" compensable="true" deterministic="false" write="true" robustness="92"/>
+	</fragment>
+	<fragment name="BS_userRegistration.xml">
+		<activity name="BS_RegistrationAck" compensable="true" deterministic="false" write="true" robustness="96"/>
+	</fragment>
+</robustnessAnnotation>

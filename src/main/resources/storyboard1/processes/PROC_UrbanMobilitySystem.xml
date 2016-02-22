@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:process name="UrbanMobilitySystem_Core" xmlns:tns="http://das.fbk.eu/Process" xmlns:tns1="http://das.fbk.eu/Annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://das.fbk.eu/Process ../Schemata/Process.xsd ">
+
+<tns:receive name="UMS_TripRequest">
+</tns:receive>
+
+<tns:abstract name="UMS_CalculateTripAlternatives">
+	<tns:goal>
+		<tns1:point>
+			<tns1:domainProperty dp_name="MultiModalPlanner">
+				<tns1:state>
+				PLANNING_COMPLETED
+				</tns1:state>
+			</tns1:domainProperty>
+		</tns1:point>
+	</tns:goal>
+</tns:abstract>
+
+<tns:concrete name="UMS_SecurityAndPrivacyFiltering">
+</tns:concrete>
+
+<tns:concrete name="UMS_UtilityRanking">
+</tns:concrete>
+
+<tns:invoke name="UMS_TripAlternatives">
+</tns:invoke>
+
+<tns:receive name="UMS_TripManagementRequest">
+</tns:receive>
+
+<tns:invoke name="UMS_TripManagementReply">
+</tns:invoke>
+
+</tns:process>

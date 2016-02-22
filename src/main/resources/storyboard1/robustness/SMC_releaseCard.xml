@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robustnessAnnotation>
+	<fragment name="SMC_releaseCard.xml">
+		<activity name="SMC_MobilityCardRequest" compensable="true" deterministic="false" write="true" robustness="97"/>
+	</fragment>
+	<fragment name="SMC_releaseCard.xml">
+		<activity name="SMC_MobilityCardReply" compensable="true" deterministic="false" write="true" robustness="97"/>
+	</fragment>
+</robustnessAnnotation>

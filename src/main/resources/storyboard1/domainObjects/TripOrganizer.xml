@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:domainObject name="TripOrganizer" xmlns:tns="http://das.fbk.eu/DomainObject" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://das.fbk.eu/Fragment ../../../schema/allow-ensembles/DomainObject.xsd ">
+	<tns:domainKnowledge>
+		<tns:internalDomainProperty name="domainProperties/TripOrganizer" />
+		<tns:externalDomainProperty name="domainProperties/FlexibusTrip"/>
+	</tns:domainKnowledge>
+	<tns:process name="processes/TripOrganizer_process" />
+	
+	<tns:fragment name="fragments/TO_organizeTrip" />
+
+</tns:domainObject>

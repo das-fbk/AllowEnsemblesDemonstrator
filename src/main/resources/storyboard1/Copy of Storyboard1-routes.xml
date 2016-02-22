@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<!-- Flexibus test route -->
+	<route id="1" color="#FF0000" noOfChanges="0" utility="0.0" flexibusRoute="true">
+		<!-- Using flexibus from Gardolo main square to Trento train station -->
+		<leg Cost="0" duration="500" walkingDistance="0">
+			<transportType type="flexibus" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>}olxGc`ybATKFAD?JAOqDCQ|Bg@dAW^Gb@KHCDEHVHXNpALnABNBd@Fd@JlABPFn@Hz@LdADZBHF^J^PDREf@c@l@WXQT[Tm@R_@`@]f@Y`AUJChEeAj@O~@UpEcAvBg@z@S~Bk@bCk@JEfAWfAWLCl@Od@MzAO\@^JZTVTTf@P\^b@VRh@R|@NXJZVT\Tn@XdBvA~MfBfIdBrG`@xA`@|Ab@hAXl@V`@l@p@d@`@j@\\J\J\Db@FX?Z@d@Gx@Qv@YdAk@bDeBzByAlEqC|@}@nAqAzA{B~@oBxAyC|HeQx@eBtBuE|BaFZc@r@w@t@g@f@Sh@O~@Gj@Bl@Hf@NlBv@rEtB^Nn@VhAVpAHvAOl@AVBPB\Nr@d@l@b@j@BVGXWTc@No@?UCWKk@KWUg@w@s@Sa@OYKWK[IMMk@GYEUGYI[EUCIs@iDCMCKCKBCBCBE@G?GAGAECECC@KVeBBMJu@L{@Fi@DYPqADWZcCL{@NgABQD]F]?EJu@T_BBOBWTeB@EPuAHg@Na@R]LQXa@FKFDDD`@TBBtAv@DBDBt@b@VNLH`B|@^T`An@BBFDHDBd@@NBRLLvBpADBFBFDRLTJRPBL@J@Jk@?</geometry>
+		</leg>
+		<!-- Using flexibus from Trento train station to Trento hospital -->
+		<leg Cost="0" duration="500" walkingDistance="0">
+			<transportType type="flexibus" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>mpexGsyzbASMF[@G@C@MTJT@XBx@d@LJhAz@H?bAGTAjAQNIh@DN?P@RR?HNbCBb@BTDb@FRJ@JC\SJGb@QHAv@MPEZG\Eb@CD?DATAP?H?J?B?TE\EhAQpC]NCNCjAMXEZEB?nBWNAbAOj@Kj@IAS?OIuEAa@Ca@E_A?IGICCK{@COAc@A_@Ci@ImCASHAd@IzDg@\I\GLCLArAQzB]HAp@KLCtCyCVWxAyAf@g@zA}ANQTUjCuCHKb@k@`@i@T[xAqCt@_BzBoElBaEPc@FBJCHIBG@M?ICKEIGEGAE@[MiAqAKKk@m@iAoAWY</geometry>
+		</leg>
+	</route>
+	<!-- First passenger test route -->
+	<route id="2" color="#FF0000" noOfChanges="0" utility="0.0">
+		<!-- From passenger home in Gardolo to Gardolo main square -->
+		<leg Cost="0" duration="500" walkingDistance="0">
+			<transportType type="walk" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>qelxGqpybA]Zs@j@GBBXD|@HZ?JKXYReAV}Bf@[DYD</geometry>
+		</leg>
+		<!-- Using flexibus from Gardolo main square to Trento train station -->
+		<leg Cost="0" duration="500" walkingDistance="0">
+			<transportType type="flexibus" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>}olxGc`ybATKFAD?JAOqDCQ|Bg@dAW^Gb@KHCDEHVHXNpALnABNBd@Fd@JlABPFn@Hz@LdADZBHF^J^PDREf@c@l@WXQT[Tm@R_@`@]f@Y`AUJChEeAj@O~@UpEcAvBg@z@S~Bk@bCk@JEfAWfAWLCl@Od@MzAO\@^JZTVTTf@P\^b@VRh@R|@NXJZVT\Tn@XdBvA~MfBfIdBrG`@xA`@|Ab@hAXl@V`@l@p@d@`@j@\\J\J\Db@FX?Z@d@Gx@Qv@YdAk@bDeBzByAlEqC|@}@nAqAzA{B~@oBxAyC|HeQx@eBtBuE|BaFZc@r@w@t@g@f@Sh@O~@Gj@Bl@Hf@NlBv@rEtB^Nn@VhAVpAHvAOl@AVBPB\Nr@d@l@b@j@BVGXWTc@No@?UCWKk@KWUg@w@s@Sa@OYKWK[IMMk@GYEUGYI[EUCIs@iDCMCKCKBCBCBE@G?GAGAECECC@KVeBBMJu@L{@Fi@DYPqADWZcCL{@NgABQD]F]?EJu@T_BBOBWTeB@EPuAHg@Na@R]LQXa@FKFDDD`@TBBtAv@DBDBt@b@VNLH`B|@^T`An@BBFDHDBd@@NBRLLvBpADBFBFDRLTJRPBL@J@Jk@?</geometry>
+		</leg>
+		<!-- Using flexibus from Trento train station to Trento hospital -->
+		<leg Cost="0" duration="500" walkingDistance="0">
+			<transportType type="flexibus" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>mpexGsyzbASMF[@G@C@MTJT@XBx@d@LJhAz@H?bAGTAjAQNIh@DN?P@RR?HNbCBb@BTDb@FRJ@JC\SJGb@QHAv@MPEZG\Eb@CD?DATAP?H?J?B?TE\EhAQpC]NCNCjAMXEZEB?nBWNAbAOj@Kj@IAS?OIuEAa@Ca@E_A?IGICCK{@COAc@A_@Ci@ImCASHAd@IzDg@\I\GLCLArAQzB]HAp@KLCtCyCVWxAyAf@g@zA}ANQTUjCuCHKb@k@`@i@T[xAqCt@_BzBoElBaEPc@FBJCHIBG@M?ICKEIGEGAE@[MiAqAKKk@m@iAoAWY</geometry>
+		</leg>
+	</route>
+	<route id="3" color="#FF0000" noOfChanges="0" utility="0.0">
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="bicycle" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>__txGwlvbAD]bBVPPDNCJAPBTDJHHJBJANMDOBSCOEM@_@?YCs@?oBJi@Ga@B}BJoAbBIn@FXPRXBPHNJHLDJ?PGNWDU@QCUBg@Hk@h@s@`@s@`@_AlCmIf@aBh@eBZkAL]HMHSDCBCDGFGBCBCDAFAFABCDG@E?E?KCGAGCEAQ?O@Yl@oBh@gBf@aBZcAL[N]N[l@aAr@u@`Ao@\\Ql@YdA_@bA_@VKNEjAe@~@]`@QbC_AxB_ArBs@LEJEbEaBHCDAzAYPCPA^Av@CbCDl@@rBj@pDbA|Ab@NDnJhC`MzGfChAt@TXFnQpDxHfB~Cf@L?x@BjACvAGtAI\\ATAl@EbHa@VARANAb@Cd@C~AGxCSnCk@vCw@B?f@MvBe@~Cu@bGwAtKkCjQkET?LDJFDRAj@UZYPm@Vo@FOBGHELPj@DRHVFTZlABF\\Y
+			</geometry>
+		</leg>
+	</route>	
+</routes>

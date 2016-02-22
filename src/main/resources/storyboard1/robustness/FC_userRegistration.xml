@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robustnessAnnotation>
+	<fragment name="FC_userRegistration.xml">
+		<activity name="FC_UserRegistrationRequest" compensable="true" deterministic="false" write="true" robustness="93"/>
+	</fragment>
+	<fragment name="FC_userRegistration.xml">
+		<activity name="FC_UserRegistrationAck" compensable="true" deterministic="false" write="true" robustness="90"/>
+	</fragment>
+</robustnessAnnotation>

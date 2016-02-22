@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:process name="TripOrganization_Core" xmlns:tns="http://das.fbk.eu/Process" xmlns:tns1="http://das.fbk.eu/Annotation" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://das.fbk.eu/Process ../../../schema/allow-ensembles/Process.xsd ">
+
+<tns:receive name="TO_ChosenTrip">
+</tns:receive>
+
+<tns:invoke name="TO_DefineGoal">
+</tns:invoke>
+
+</tns:process>

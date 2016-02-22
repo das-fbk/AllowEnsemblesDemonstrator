@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:process name="MMP_Core" xmlns:tns="http://das.fbk.eu/Process" xmlns:tns1="http://das.fbk.eu/Annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://das.fbk.eu/Process ../../../schema/allow-ensembles/Process.xsd ">
+ 
+<tns:receive name="MMP_PlanRequest">
+</tns:receive>
+
+<tns:invoke name="MMP_PlanResponse">
+</tns:invoke>
+</tns:process>

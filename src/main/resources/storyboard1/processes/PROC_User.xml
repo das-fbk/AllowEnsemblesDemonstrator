@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:process name="User_Core" xmlns:tns="http://das.fbk.eu/Process"
+	xmlns:tns1="http://das.fbk.eu/Annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://das.fbk.eu/Process ../Schemata/Process.xsd ">
+
+	<!-- <tns:receive name="ReceiveTripInfo"> -->
+	<!-- </tns:receive> -->
+
+	<tns:abstract name="USER_PlanTrip">
+		<tns:goal>
+			<tns1:point>
+				<tns1:domainProperty dp_name="ProvideTrip">
+					<tns1:state>
+						TRIP_REQUEST_ACCOMPLISHED
+					</tns1:state>
+				</tns1:domainProperty>
+			</tns1:point>
+		</tns:goal>
+	</tns:abstract>
+
+	<!-- <tns:invoke name="USER_SendTripAlternatives"> -->
+	<!-- </tns:invoke> -->
+
+	<tns:concrete name="USER_ChooseAlternative" />
+
+	<!-- <tns:receive name="USER_ReceiveChosenTrip"> -->
+	<!-- </tns:receive> -->
+
+	<tns:abstract name="USER_ManageTrip">
+		<tns:goal>
+			<tns1:point>
+				<tns1:domainProperty dp_name="ProvideTrip">
+					<tns1:state>
+						TRIP_MANAGEMENT_ACCOMPLISHED
+					</tns1:state>
+				</tns1:domainProperty>
+			</tns1:point>
+		</tns:goal>
+	</tns:abstract>
+
+	<!-- TODO: animate trip test because of walk before flexibus -->
+	<tns:concrete name="USER_animateTrip" /> 
+
+	<tns:abstract name="USER_ExecuteTrip">
+		<tns:goal>
+			<tns1:point>
+				<tns1:domainProperty dp_name="RoutePassengerStatus">
+					<tns1:state>
+						DESTINATION_REACHED
+					</tns1:state>
+				</tns1:domainProperty>
+			</tns1:point>
+		</tns:goal>
+	</tns:abstract>
+
+</tns:process>

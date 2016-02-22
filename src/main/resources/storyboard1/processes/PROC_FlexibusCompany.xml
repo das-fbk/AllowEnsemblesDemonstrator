@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:process name="FlexibusCompany_Core" xmlns:tns="http://das.fbk.eu/Process"
+	xmlns:tns1="http://das.fbk.eu/Annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://das.fbk.eu/Process Process.xsd ">
+
+	<tns:pick name="FB_pick">
+		<tns:onMessage name="FC_UserRegistrationRequest">
+		<tns:concrete name="FC_EnterInFBCensemble_User"/>
+			<tns:invoke name="FC_UserRegistrationAck">
+				<tns:effect>
+					<tns1:event dpName="FlexibusTrip" eventName="userRegistration"></tns1:event>
+				</tns:effect>
+			</tns:invoke>
+			<tns:receive name="FC_UserLoginRequest">
+				<tns:precondition>
+					<tns1:point>
+						<tns1:domainProperty dp_name="FlexibusTrip">
+							<tns1:state>USER_REGISTERED</tns1:state>
+						</tns1:domainProperty>
+					</tns1:point>
+				</tns:precondition>
+			</tns:receive>
+			<tns:invoke name="FC_UserLoginAck">
+				<tns:effect>
+					<tns1:event dpName="FlexibusTrip" eventName="userLogin"></tns1:event>
+				</tns:effect>
+			</tns:invoke>
+			<tns:receive name="FC_FlexibusBookingRequest">
+				<tns:precondition>
+					<tns1:point>
+						<tns1:domainProperty dp_name="FlexibusTrip">
+							<tns1:state>USER_LOGGED_IN</tns1:state>
+						</tns1:domainProperty>
+					</tns1:point>
+				</tns:precondition>
+			</tns:receive>
+			<tns:concrete name="FC_AssignPassengerToRoute"/>
+			<tns:invoke name="FC_TripDetails" />
+			<tns:receive name="FC_PaymentReceipt" />
+			<tns:concrete name="FC_WaitRouteCreated"/>
+			<tns:abstract name="FC_ManageRoute">
+				<tns:goal>
+					<tns1:point>
+						<tns1:domainProperty dp_name="HandleRoute">
+							<tns1:state>
+								PICKUP_POINT_ADDED
+							</tns1:state>
+						</tns1:domainProperty>
+					</tns1:point>
+				</tns:goal>
+			</tns:abstract>
+			<tns:invoke name="FC_BookingResult">
+				<tns:effect>
+					<tns1:event dpName="FlexibusTrip" eventName="tripBooking"></tns1:event>
+				</tns:effect>
+			</tns:invoke>
+		</tns:onMessage>
+
+		<tns:onMessage name="FC_DriverLoginRequest">
+			<tns:concrete name="FC_EnterInFBCensemble_Employee"></tns:concrete>
+			<tns:invoke name="FC_DriverLoginAck">
+				<tns:effect>
+					<tns1:event dpName="FlexibusTrip" eventName="driverLogin"></tns1:event>
+				</tns:effect>
+			</tns:invoke>
+			<tns:receive name="FC_RouteAssignmentRequest">
+				<tns:precondition>
+					<tns1:point>
+						<tns1:domainProperty dp_name="FlexibusTrip">
+							<tns1:state>DRIVER_LOGGED_IN</tns1:state>
+						</tns1:domainProperty>
+					</tns1:point>
+				</tns:precondition>
+			</tns:receive>
+			<tns:concrete name="FC_ComputeRoute"></tns:concrete>
+			<tns:invoke name="FC_RouteAssignmentReply">
+				<tns:effect>
+					<tns1:event dpName="FlexibusTrip" eventName="routeAssignment"></tns1:event>
+				</tns:effect>
+			</tns:invoke>
+			<tns:concrete name="FC_RouteStarted"></tns:concrete>
+			<tns:precondition>
+					<tns1:point>
+						<tns1:domainProperty dp_name="FlexibusDriverStatus">
+							<tns1:state>ROUTE_ENDED</tns1:state>
+						</tns1:domainProperty>
+					</tns1:point>
+				</tns:precondition>
+			<tns:abstract name="FC_CloseRouteNotification">
+				<tns:goal>
+					<tns1:point>
+						<tns1:domainProperty dp_name="FlexibusDriverStatus">
+							<tns1:state>
+								ROUTE_CLOSED
+							</tns1:state>
+						</tns1:domainProperty>
+					</tns1:point>
+				</tns:goal>
+				<tns:effect>
+					<tns1:event dpName="FlexibusTrip" eventName="closeRoute"></tns1:event>
+				</tns:effect>
+			</tns:abstract>
+			<tns:concrete name="FC_RouteClosed"></tns:concrete>
+		</tns:onMessage>
+	</tns:pick>
+</tns:process>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:domainProperty id="HandleRoute" xmlns:tns="http://das.fbk.eu/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://das.fbk.eu/Process ../../../../../../../schema-allow-ensembles/schema/allow-ensembles/DomainProperty.xsd ">
+  
+  <tns:state isInitial="true">INITIAL</tns:state>
+  <tns:state>ROUTE_CREATED</tns:state>
+  <tns:state>PICKUP_POINT_ADDED</tns:state>
+  <tns:state>ROUTE_CLOSED</tns:state>
+  <tns:state>ROUTE_STARTED</tns:state>
+  <tns:state>PASSENGER_CHECKED_IN</tns:state>
+  <tns:state>CHECK_IN_CLOSED</tns:state>
+  <tns:state>ROUTE_COMPLETED</tns:state>
+  
+  <tns:event>createRoute</tns:event>
+  <tns:event>addPickupPoint</tns:event>
+  <tns:event>backToRoute</tns:event>
+  <tns:event>closeRoute</tns:event>
+  <tns:event>startRoute</tns:event>
+  <tns:event>passengerCheckIn</tns:event>
+  <tns:event>backToCheckIn</tns:event>
+  <tns:event>closeCheckIn</tns:event>
+  <tns:event>endRoute</tns:event>
+  <tns:event>closeRouteSignal</tns:event>
+  <tns:event>startRouteSignal</tns:event>
+  
+  <tns:transition isControllable="true">
+    <tns:from>INITIAL</tns:from>
+    <tns:to>ROUTE_CREATED</tns:to>
+    <tns:event>createRoute</tns:event>
+  </tns:transition>
+  
+  <tns:transition isControllable="true">
+    <tns:from>ROUTE_CREATED</tns:from>
+    <tns:to>PICKUP_POINT_ADDED</tns:to>
+    <tns:event>addPickupPoint</tns:event>
+  </tns:transition>
+  
+  <tns:transition isControllable="true">
+    <tns:from>PICKUP_POINT_ADDED</tns:from>
+    <tns:to>ROUTE_CREATED</tns:to>
+    <tns:event>backToRoute</tns:event>
+  </tns:transition>
+  
+  <tns:transition isControllable="true">
+    <tns:from>ROUTE_CREATED</tns:from>
+    <tns:to>ROUTE_CLOSED</tns:to>
+    <tns:event>closeRoute</tns:event>
+  </tns:transition>
+  
+  <tns:transition isControllable="true">
+    <tns:from>ROUTE_CLOSED</tns:from>
+    <tns:to>ROUTE_STARTED</tns:to>
+    <tns:event>startRoute</tns:event>
+  </tns:transition>
+  
+  <tns:transition isControllable="true">
+    <tns:from>ROUTE_STARTED</tns:from>
+    <tns:to>PASSENGER_CHECKED_IN</tns:to>
+    <tns:event>passengerCheckIn</tns:event>
+  </tns:transition>
+  
+    <tns:transition isControllable="true">
+    <tns:from>PASSENGER_CHECKED_IN</tns:from>
+    <tns:to>ROUTE_STARTED</tns:to>
+    <tns:event>backToCheckIn</tns:event>
+  </tns:transition>
+  
+  <tns:transition isControllable="true">
+    <tns:from>ROUTE_STARTED</tns:from>
+    <tns:to>CHECK_IN_CLOSED</tns:to>
+    <tns:event>closeCheckIn</tns:event>
+  </tns:transition>
+  
+  <tns:transition isControllable="true">
+    <tns:from>CHECK_IN_CLOSED</tns:from>
+    <tns:to>ROUTE_COMPLETED</tns:to>
+    <tns:event>endRoute</tns:event>
+  </tns:transition>
+  
+  <tns:transition isControllable="true">
+    <tns:from>INITIAL</tns:from>
+    <tns:to>ROUTE_CLOSED</tns:to>
+    <tns:event>closeRouteSignal</tns:event>
+  </tns:transition>
+  
+   <tns:transition isControllable="true">
+    <tns:from>INITIAL</tns:from>
+    <tns:to>ROUTE_STARTED</tns:to>
+    <tns:event>startRouteSignal</tns:event>
+  </tns:transition>
+  
+</tns:domainProperty>

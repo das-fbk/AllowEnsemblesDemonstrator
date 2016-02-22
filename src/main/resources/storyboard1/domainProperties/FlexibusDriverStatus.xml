@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:domainProperty id="FlexibusDriverStatus"
+	xmlns:tns="http://das.fbk.eu/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://das.fbk.eu/Process ../../../../../../../schema-allow-ensembles/schema/allow-ensembles/DomainProperty.xsd ">
+
+	<tns:state isInitial="true">INITIAL</tns:state>
+	<tns:state>FLEXIBUS_TAKEN</tns:state>
+	<tns:state>ROUTE_STARTED</tns:state>
+	<tns:state>AT_PICKUP_POINT</tns:state>
+	<tns:state>TAKING_PASSENGER</tns:state>
+	<tns:state>PASSENGERS_LOADED</tns:state>
+	<tns:state>ROUTE_ENDED</tns:state>
+	<tns:state>ROUTE_CLOSED</tns:state>
+	<!-- The following states are used for adaptation -->
+<!-- 	<tns:state>DELAY</tns:state> -->
+<!-- 	<tns:state>FLEXIBUS_BROKEN</tns:state> -->
+
+	<tns:event>flexibusCaught</tns:event>
+	<tns:event>startRoute</tns:event>
+	<tns:event>goToPickupPoint</tns:event>
+	<tns:event>takePassenger</tns:event>
+	<tns:event>backToPassengerBoarding</tns:event>
+	<tns:event>nextPickupPoint</tns:event>
+	<tns:event>allPickupPointReached</tns:event>
+	<tns:event>endRoute</tns:event>
+	<tns:event>closeRoute</tns:event>
+	<!-- The following events are used for adaptation -->
+<!-- 	<tns:event>delayOnStartedRoute</tns:event> -->
+<!-- 	<tns:event>delayOnStartedRouteBack</tns:event> -->
+<!-- 	<tns:event>delayAtAllPassOnBoard</tns:event> -->
+<!-- 	<tns:event>delayAtAllPassOnBoardBack</tns:event> -->
+<!-- 	<tns:event>fbBrokenOnStartedRoute</tns:event> -->
+<!-- 	<tns:event>fbBrokenAtAllPassOnBoard</tns:event> -->
+<!-- 	<tns:event>forceEndRoute</tns:event> -->
+
+	<tns:transition isControllable="true">
+		<tns:from>INITIAL</tns:from>
+		<tns:to>FLEXIBUS_TAKEN</tns:to>
+		<tns:event>flexibusCaught</tns:event>
+	</tns:transition>
+
+	<tns:transition isControllable="true">
+		<tns:from>FLEXIBUS_TAKEN</tns:from>
+		<tns:to>ROUTE_STARTED</tns:to>
+		<tns:event>startRoute</tns:event>
+	</tns:transition>
+
+	<tns:transition isControllable="true">
+		<tns:from>ROUTE_STARTED</tns:from>
+		<tns:to>AT_PICKUP_POINT</tns:to>
+		<tns:event>goToPickupPoint</tns:event>
+	</tns:transition>
+
+	<tns:transition isControllable="true">
+		<tns:from>AT_PICKUP_POINT</tns:from>
+		<tns:to>TAKING_PASSENGER</tns:to>
+		<tns:event>takePassenger</tns:event>
+	</tns:transition>
+
+	<tns:transition isControllable="true">
+		<tns:from>TAKING_PASSENGER</tns:from>
+		<tns:to>AT_PICKUP_POINT</tns:to>
+		<tns:event>backToPassengerBoarding</tns:event>
+	</tns:transition>
+
+	<tns:transition isControllable="true">
+		<tns:from>AT_PICKUP_POINT</tns:from>
+		<tns:to>ROUTE_STARTED</tns:to>
+		<tns:event>nextPickupPoint</tns:event>
+	</tns:transition>
+
+	<tns:transition isControllable="true">
+		<tns:from>ROUTE_STARTED</tns:from>
+		<tns:to>PASSENGERS_LOADED</tns:to>
+		<tns:event>allPickupPointReached</tns:event>
+	</tns:transition>
+
+	<tns:transition isControllable="true">
+		<tns:from>PASSENGERS_LOADED</tns:from>
+		<tns:to>ROUTE_ENDED</tns:to>
+		<tns:event>endRoute</tns:event>
+	</tns:transition>
+	
+	<tns:transition isControllable="true">
+		<tns:from>ROUTE_ENDED</tns:from>
+		<tns:to>ROUTE_CLOSED</tns:to>
+		<tns:event>closeRoute</tns:event>
+	</tns:transition>
+
+	<!-- The following events are used for adaptation -->
+
+<!-- 	<tns:transition isControllable="true"> -->
+<!-- 		<tns:from>ROUTE_STARTED</tns:from> -->
+<!-- 		<tns:to>DELAY</tns:to> -->
+<!-- 		<tns:event>delayOnStartedRoute</tns:event> -->
+<!-- 	</tns:transition> -->
+
+<!-- 	<tns:transition isControllable="true"> -->
+<!-- 		<tns:from>DELAY</tns:from> -->
+<!-- 		<tns:to>ROUTE_STARTED</tns:to> -->
+<!-- 		<tns:event>delayOnStartedRouteBack</tns:event> -->
+<!-- 	</tns:transition> -->
+
+<!-- 	<tns:transition isControllable="true"> -->
+<!-- 		<tns:from>PASSENGERS_LOADED</tns:from> -->
+<!-- 		<tns:to>DELAY</tns:to> -->
+<!-- 		<tns:event>delayAtAllPassOnBoard</tns:event> -->
+<!-- 	</tns:transition> -->
+
+<!-- 	<tns:transition isControllable="true"> -->
+<!-- 		<tns:from>DELAY</tns:from> -->
+<!-- 		<tns:to>PASSENGERS_LOADED</tns:to> -->
+<!-- 		<tns:event>delayAtAllPassOnBoardBack</tns:event> -->
+<!-- 	</tns:transition> -->
+
+<!-- 	<tns:transition isControllable="true"> -->
+<!-- 		<tns:from>ROUTE_STARTED</tns:from> -->
+<!-- 		<tns:to>FLEXIBUS_BROKEN</tns:to> -->
+<!-- 		<tns:event>fbBrokenOnStartedRoute</tns:event> -->
+<!-- 	</tns:transition> -->
+
+<!-- 	<tns:transition isControllable="true"> -->
+<!-- 		<tns:from>PASSENGERS_LOADED</tns:from> -->
+<!-- 		<tns:to>FLEXIBUS_BROKEN</tns:to> -->
+<!-- 		<tns:event>fbBrokenAtAllPassOnBoard</tns:event> -->
+<!-- 	</tns:transition> -->
+
+<!-- 	<tns:transition isControllable="true"> -->
+<!-- 		<tns:from>FLEXIBUS_BROKEN</tns:from> -->
+<!-- 		<tns:to>ROUTE_ENDED</tns:to> -->
+<!-- 		<tns:event>forceEndRoute</tns:event> -->
+<!-- 	</tns:transition> -->
+
+</tns:domainProperty>

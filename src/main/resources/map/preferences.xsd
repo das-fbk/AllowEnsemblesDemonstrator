@@ -1,0 +1,31 @@
+<xs:schema attributeFormDefault="unqualified"
+	elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="routes">
+		<xs:annotation>
+			<xs:documentation>Preferences</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="preferences" maxOccurs="1" minOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TravelTimeWeight" type="xs:double"></xs:element>
+							<xs:element name="CostWeight" type="xs:double"></xs:element>
+							<xs:element name="WalkingDistanceWeight" type="xs:double"></xs:element>
+							<xs:element name="NumberOfChangesWeight" type="xs:double"></xs:element>
+							<xs:element name="ReliabilityCostWeight" type="xs:double"></xs:element>
+							<xs:element name="UnsatisfiedSafetyPreferenceWeight" type="xs:double"></xs:element>
+							<xs:element name="WillingnessToShareDataWeight" type="xs:double"></xs:element>
+							<xs:element name="MaximumTravelDuration" type="xs:int"></xs:element>
+							<xs:element name="MaximumCost" type="xs:double"></xs:element>
+							<xs:element name="MaximumWalkingDistance" type="xs:double"></xs:element>
+							<xs:element name="MaximumReliabilityCost" type="xs:double"></xs:element>
+							<xs:element name="MaximumNumberOfChanges" type="xs:int"></xs:element>
+						</xs:sequence>
+						<xs:attribute type="xs:string" name="color" />
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

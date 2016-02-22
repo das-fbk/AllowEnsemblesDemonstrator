@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:domainObject name="PayPal" xmlns:tns="http://das.fbk.eu/DomainObject" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://das.fbk.eu/DomainObject ../../../schema/allow-ensembles/DomainObject.xsd ">
+  
+  <tns:domainKnowledge>
+    <tns:internalDomainProperty name="domainProperties/PayPalPayment"/>
+  </tns:domainKnowledge>
+    
+  <tns:process name="processes/PROC_PayPal"/>
+  
+  <tns:fragment name="fragments/PP_onlinePayment"/>
+  
+</tns:domainObject>

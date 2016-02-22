@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:domainObject name="RouteManagement" singleton="true" xmlns:tns="http://das.fbk.eu/DomainObject" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://das.fbk.eu/DomainObject ../../../schema/allow-ensembles/DomainObject.xsd ">
+  <tns:domainKnowledge>
+    <tns:internalDomainProperty name="domainProperties/HandleRoute"/>
+  </tns:domainKnowledge>
+  <tns:process name="processes/PROC_RouteManagement"/>
+  <tns:fragment name="fragments/RM_createRoute"/>
+  <tns:fragment name="fragments/RM_assignPickupPoint"/>
+  <tns:fragment name="fragments/RM_startRoute"/>
+  <tns:fragment name="fragments/RM_endRoute"/>
+  <tns:fragment name="fragments/RM_passengerCheckIn"/>
+</tns:domainObject>

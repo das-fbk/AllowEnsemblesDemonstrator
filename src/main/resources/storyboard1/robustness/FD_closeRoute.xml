@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robustnessAnnotation>
+	<fragment name="FD_closeRoute.xml">
+		<activity name="FD_CloseRouteNotificationRequest" compensable="true" deterministic="false" write="true" robustness="93"/>
+	</fragment>
+	<fragment name="FD_closeRoute.xml">
+		<activity name="FD_CloseRouteNotificationReply" compensable="true" deterministic="false" write="true" robustness="92"/>
+	</fragment>
+</robustnessAnnotation>

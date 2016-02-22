@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robustnessAnnotation>
+	<fragment name="TO_organizeTrip.xml">
+		<activity name="TO_ChosenTrip" compensable="true" deterministic="false" write="true" robustness="91"/>
+	</fragment>
+	<fragment name="TO_organizeTrip.xml">
+		<activity name="TO_DefineGoal" compensable="true" deterministic="false" write="true" robustness="94"/>
+	</fragment>
+	<fragment name="TO_organizeTrip.xml">
+		<activity name="TO_HOAAorganizeTrip" compensable="true" deterministic="false" write="true" robustness="95"/>
+	</fragment>
+</robustnessAnnotation>

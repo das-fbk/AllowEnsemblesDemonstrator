@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:process name="TrainCompany_Core" xmlns:tns="http://das.fbk.eu/Process" xmlns:tns1="http://das.fbk.eu/Annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://das.fbk.eu/Process Process.xsd ">
+
+<tns:receive name="TC_RegistrationRequest">
+</tns:receive>
+
+<tns:invoke name="TC_RegistrationAck">
+</tns:invoke>
+
+<tns:receive name="TC_TrainBookingRequest">
+</tns:receive>
+
+<tns:invoke name="TC_BookingResult">
+</tns:invoke>
+
+</tns:process>

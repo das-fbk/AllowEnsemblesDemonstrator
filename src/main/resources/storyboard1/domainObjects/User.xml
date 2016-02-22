@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tns:domainObject name="User" xmlns:tns="http://das.fbk.eu/DomainObject" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://das.fbk.eu/DomainObject ../Schemata/DomainObject.xsd ">
+  <tns:domainKnowledge>
+      <tns:externalDomainProperty name="domainProperties/ProvideTrip" />
+<!--       <tns:externalDomainProperty name="domainProperties/SetupTrip" /> -->
+  </tns:domainKnowledge>
+  <tns:process name="processes/PROC_User"/>
+</tns:domainObject>
+

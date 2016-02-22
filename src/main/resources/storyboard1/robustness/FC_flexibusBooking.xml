@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robustnessAnnotation>
+	<fragment name="FC_flexibusBooking.xml">
+		<activity name="FC_FlexibusBookingRequest" compensable="true" deterministic="false" write="true" robustness="93"/>
+	</fragment>
+	<fragment name="FC_flexibusBooking.xml">
+		<activity name="FC_TripDetails" compensable="true" deterministic="true" write="false" robustness="97"/>
+	</fragment>
+	<fragment name="FC_flexibusBooking.xml">
+		<activity name="FC_ConfirmAndPay" compensable="true" deterministic="false" write="true" robustness="94"/>
+	</fragment>
+	<fragment name="FC_flexibusBooking.xml">
+		<activity name="FC_PaymentReceipt" compensable="true" deterministic="false" write="true" robustness="91"/>
+	</fragment>
+	<fragment name="FC_flexibusBooking.xml">
+		<activity name="FC_BookingResult" compensable="true" deterministic="false" write="true" robustness="97"/>
+	</fragment>
+	<fragment name="FC_flexibusBooking.xml">
+		<activity name="FC_SetPassengerDetails" compensable="true" deterministic="false" write="true" robustness="97"/>
+	</fragment>
+</robustnessAnnotation>

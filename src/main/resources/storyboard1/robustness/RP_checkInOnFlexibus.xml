@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robustnessAnnotation>
+	<fragment name="RP_checkInOnFlexibus.xml">
+		<activity name="RP_WaitFlexibusRequest" compensable="true" deterministic="true" write="false" robustness="99"/>
+	</fragment>
+	<fragment name="RP_checkInOnFlexibus.xml">
+		<activity name="RP_WaitFlexibus" compensable="true" deterministic="true" write="false" robustness="95"/>
+	</fragment>
+	<fragment name="RP_checkInOnFlexibus.xml">
+		<activity name="RP_WaitFlexibusReply" compensable="true" deterministic="true" write="false" robustness="93"/>
+	</fragment>
+	<fragment name="RP_checkInOnFlexibus.xml">
+		<activity name="RP_CheckInOnFlexibusRequest" compensable="true" deterministic="false" write="true" robustness="91"/>
+	</fragment>
+	<fragment name="RP_checkInOnFlexibus.xml">
+		<activity name="RP_PassengerCheckedIn" compensable="true" deterministic="false" write="true" robustness="92"/>
+	</fragment>
+	<fragment name="RP_checkInOnFlexibus.xml">
+		<activity name="RP_CheckInOnFlexibusAck" compensable="true" deterministic="false" write="true" robustness="97"/>
+	</fragment>
+</robustnessAnnotation>

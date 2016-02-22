@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:domainObject name="TrainCompany" xmlns:tns="http://das.fbk.eu/DomainObject" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://das.fbk.eu/DomainObject ../../../schema/allow-ensembles/DomainObject.xsd ">
+  
+  <tns:domainKnowledge>
+    <tns:internalDomainProperty name="domainProperties/TrainTrip"/>
+    <tns:externalDomainProperty name="domainProperties/HandlePayment"/>
+  </tns:domainKnowledge>
+    
+  <tns:process name="processes/PROC_TrainCompany"/>
+  
+  <tns:fragment name="fragments/TC_userRegistration"/>
+  <tns:fragment name="fragments/TC_trainBooking"/>
+  
+</tns:domainObject>

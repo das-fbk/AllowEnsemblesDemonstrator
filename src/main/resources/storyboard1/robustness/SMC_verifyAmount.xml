@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robustnessAnnotation>
+	<fragment name="SMC_verifyAmount.xml">
+		<activity name="SMC_VerifyAmountRequest" compensable="true" deterministic="false" write="true" robustness="95"/>
+	</fragment>
+	<fragment name="SMC_verifyAmount.xml">
+		<activity name="SMC_VerifyAmountReply" compensable="true" deterministic="false" write="true" robustness="94"/>
+	</fragment>
+</robustnessAnnotation>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:tns="http://das.fbk.eu/Scenario">
+	<tns:domainObject file="domainObjects/PayPal" />
+	<tns:domainObject file="domainObjects/CreditCard" />
+	<tns:domainObject file="domainObjects/PaymentManager" />
+	<tns:domainObject file="domainObjects/BikeSharingCompany" />
+	<tns:domainObject file="domainObjects/TrainCompany" />
+	<tns:domainObject file="domainObjects/SmartMobilityCard" />
+	<tns:domainObject file="domainObjects/CarSharingCompany" />
+	<tns:domainObject file="domainObjects/RouteManagement" />
+	<tns:domainObject file="domainObjects/RoutePassenger" />
+	<tns:domainObject file="domainObjects/FlexibusCompany" />
+	<tns:domainObject file="domainObjects/MultimodalPlanner" />
+	<tns:domainObject file="domainObjects/TripOrganization" />
+	<tns:domainObject file="domainObjects/UrbanMobilitySystem" />
+	<tns:domainObject file="domainObjects/User">
+		<tns:domainObjectInstance id="User_1"  lat="46.10826" long="11.11055" preferenceFile="preferences/User1_preference.xml" />
+	</tns:domainObject>
+</tns:scenario>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robustnessAnnotation>
+	<fragment name="PP_onlinePayment.xml">
+		<activity name="PP_PaymentRequest" compensable="true" deterministic="false" write="true" robustness="95"/>
+	</fragment>
+	<fragment name="PP_onlinePayment.xml">
+		<activity name="PP_PaymentReply" compensable="true" deterministic="false" write="true" robustness="90"/>
+	</fragment>
+</robustnessAnnotation>

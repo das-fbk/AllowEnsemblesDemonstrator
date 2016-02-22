@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robustnessAnnotation>
+	<fragment name="RP_setupPassengerDetails.xml">
+		<activity name="RP_PassengerDetails" compensable="true" deterministic="true" write="false" robustness="95"/>
+	</fragment>
+	<fragment name="RP_setupPassengerDetails.xml">
+		<activity name="RP_DetailsConfirmed" compensable="true" deterministic="false" write="true" robustness="94"/>
+	</fragment>
+</robustnessAnnotation>

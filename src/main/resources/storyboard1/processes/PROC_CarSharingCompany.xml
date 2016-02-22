@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:process name="CarSharingCompany_Core" xmlns:tns="http://das.fbk.eu/Process" xmlns:tns1="http://das.fbk.eu/Annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://das.fbk.eu/Process Process.xsd ">
+
+<tns:receive name="CS_MembershipRequest">
+</tns:receive>
+
+<tns:invoke name="CS_MembershipReply">
+</tns:invoke>
+
+<tns:receive name="CS_CarReservationRequest">
+</tns:receive>
+
+<tns:invoke name="CS_CarReservationDetails">
+</tns:invoke>
+
+<tns:receive name="CS_DetailsAssessed">
+</tns:receive>
+
+<tns:invoke name="CS_CarReservationReply">
+</tns:invoke>
+
+</tns:process>

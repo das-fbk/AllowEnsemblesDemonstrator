@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:fragment id="CS_carReservation" xmlns:tns="http://das.fbk.eu/Fragment"
+	xmlns:tns1="http://das.fbk.eu/Annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://das.fbk.eu/Fragment Fragment.xsd ">
+
+	<tns:state isInitial="true" name="ST0" />
+	<tns:state name="ST1" />
+	<tns:state name="ST2" />
+	<tns:state name="ST3" />
+	<tns:state name="ST4" />
+
+	<tns:action name="CS_CarReservationRequest" actionType="input">
+		<tns:precondition>
+			<tns1:point>
+				<tns1:domainProperty dp_name="CarSharingTrip">
+					<tns1:state>MEMBERSHIP_DEFINED</tns1:state>
+				</tns1:domainProperty>
+			</tns1:point>
+		</tns:precondition>
+	</tns:action>
+
+	<tns:action name="CS_CarReservationDetails" actionType="output">
+		<tns:effect>
+			<tns1:event dpName="CarSharingTrip" eventName="carReservationRequested"></tns1:event>
+		</tns:effect>
+	</tns:action>
+
+	<tns:action name="CS_DetailsAssessed" actionType="input">
+		<tns:precondition>
+			<tns1:point>
+				<tns1:domainProperty dp_name="CarSharingTrip">
+					<tns1:state>RESERVATION_REQUESTED</tns1:state>
+				</tns1:domainProperty>
+			</tns1:point>
+		</tns:precondition>
+	</tns:action>
+
+	<tns:action name="CS_CarReservationReply" actionType="output">
+		<tns:effect>
+			<tns1:event dpName="CarSharingTrip" eventName="carReservationCompleted"></tns1:event>
+		</tns:effect>
+	</tns:action>
+
+	<tns:transition>
+		<tns:initialState>ST0</tns:initialState>
+		<tns:finalState>ST1</tns:finalState>
+		<tns:action name="CS_CarReservationRequest" actionType="input" />
+	</tns:transition>
+
+	<tns:transition>
+		<tns:initialState>ST1</tns:initialState>
+		<tns:finalState>ST2</tns:finalState>
+		<tns:action name="CS_CarReservationDetails" actionType="output" />
+	</tns:transition>
+
+	<tns:transition>
+		<tns:initialState>ST2</tns:initialState>
+		<tns:finalState>ST3</tns:finalState>
+		<tns:action name="CS_DetailsAssessed" actionType="input" />
+	</tns:transition>
+
+	<tns:transition>
+		<tns:initialState>ST3</tns:initialState>
+		<tns:finalState>ST4</tns:finalState>
+		<tns:action name="CS_CarReservationReply" actionType="output" />
+	</tns:transition>
+
+	<tns:consumerEntityType>TripOrganization</tns:consumerEntityType>
+
+</tns:fragment>

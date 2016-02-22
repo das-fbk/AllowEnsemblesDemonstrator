@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="../../../../schema-allow-ensembles/schema/allow-ensembles/Routes.xsd">
+	<route id="1" color="#FF0000" noOfChanges="0" utility="0.0">
+		<leg Cost="0" duration="995" walkingDistance="0">
+			<transportType type="bicycle" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>accxGos{bAwAn@IDHn@D^PzALhAJ~@DV@HE@gAXQFAJ{@DAGY@_@B_@BGBu@Fm@?A?C?oAFkAC{@K_@Cg@BWB?PE?C?C?_BHy@JI?G?M?AJK|@_CAG?GAGCBMG?_@@mA?w@RWBU@I?SGSB[@MDkBmEAQW@c@_AUESGAIwAIk@Dk@D}@Hq@Ck@QEA@LNvC@N@JE@{AV?NG@I@EGI?o@Ng@F_@PaBTIHI?QAw@c@ISEIKSe@WkAq@GC}@k@CAIEMIuEiCOIEEGEOKk@_@wA{@MIICKAG@M?CIAGEGEE]UUMIAI?G@EBEBIJILQ\MRIPK\G\KGGCEHABEHkC_B{BfAEBE@MFKFcAf@C@C@QJIBEBC@WLC@C@mAj@CBC@c@Ts@ZUFMFQHcIvDEQIDCKCO_AcFAWj@UFE
+			</geometry>
+		</leg>
+	</route>
+	<route id="2" color="#FFD700" noOfChanges="0" utility="0.0">
+		<leg Cost="0" duration="1059" walkingDistance="0">
+			<transportType type="car" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>accxGos{bAwAn@IDHn@D^PzALhAJ~@DVFChDeArBo@x@WBA@A?D@BBBB@BABA@C@E@CAE?CCCCCE?UoCIu@YeCAKg@{@CEIM_@m@mAiBWc@OS{A|Ag@f@yAxAWVuCxCMBC]?GYaCa@kBG[Mg@AAGWIWSu@M_@k@aAm@y@]]qAo@eBw@A?q@[GCsAm@MGWMcCkAaAtFEPOGcCeAoAi@MGGCI`AC|AGp@CPC@A@EACAECEAKGMG[OQGOI_@Qc@SAA??AAQGOIaAe@ECECMEWMu@UKCKCICIAi@Q??CASEEAICQES?e@Ae@Fi@HqAZ_@Da@BMGEGCM?S@SDKHKDMA[MWOAeBz@GBGDA@_@TWFi@?m@D]AMCEEIKMYKYIYOWQKWAe@@MDGHGHEHADIVI\M^UVYLW?[IqAUmAW[Ga@ISVOLe@Z_Ab@[Pk@n@s@`AYp@ERIVGn@I\IZKRwApB_@`@g@`@SXGHI^EXCTIBe@G_@Ii@QUCWHAXIdAUb@W\[Dk@Cq@?a@PuAbAWVmAjAc@\
+			</geometry>
+		</leg>
+	</route>
+	<route id="3" color="#FFA500" noOfChanges="2" utility="0.0">
+		<leg Cost="0" duration="782" walkingDistance="0">
+			<transportType type="walk" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>accxGos{bAwAn@IDKw@Im@Iq@Ks@CBEEKHwCrCIBMQq@JI@SDa@DeAPsAPM@MB]F]H{Df@
+			</geometry>
+		</leg>
+		<leg Cost="0" duration="993" walkingDistance="0">
+			<transportType type="carSharing" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>u~cxGyo{bAzDg@\I\GLCLArAQzB]HAp@KLCtCyCVWIOGS_CcGEO{@x@}@x@IFIWSu@M_@k@aAm@y@]]qAo@eBw@A?q@[GCsAm@MGWMcCkAaAtFEPOGcCeAoAi@MGGCI`AC|AGp@CPC@A@EACAECEAKGMG[OQGOI_@Qc@SAA??AAQGOIaAe@ECECMEWMu@UKCKCICIAi@Q??CASEEAICQES?e@Ae@Fi@HqAZ_@Da@BMGEGCM?S@SDKHKDMA[MWOAeBz@GBGDA@_@TWFi@?m@D]AMCEEIKMYKYIYOWQKWAe@@MDGHGHEHADIVI\M^UVYLW?[IqAUmAW[Ga@ISVOLe@Z_Ab@[Pk@n@s@`AYp@ERIVGn@I\IZKRwApB_@`@g@`@SXGHI^EXCTIBe@G_@Ii@QUCWHAXIdAUb@W\[Dk@Cq@?a@PuAbAWVmAjAc@\
+			</geometry>
+		</leg>
+	</route>
+	<route id="4" color="#008000" noOfChanges="2" utility="0.0">
+		<leg Cost="1.2" duration="952" walkingDistance="0">
+			<transportType type="car" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>accxGos{bAwAn@IDHn@D^PzALhAJ~@DV@HP`BVxB@D@JJ|@Hr@Hl@Dd@LzA@LBVW@OBWFY@U@U?yCDG?U?E?q@EkAIQ?}@CeABm@BIAKCAA]UWQe@_@[Y??OEGCC?u@HIB_@DI@I@k@Hk@JcANO@oBVC?[DYDkALOBOBqC\iAP]DUDC?K?I?Q?U@E@E?c@B]D[FQDw@LI@c@PKF]RKBKAGSEc@CUCc@OcC?IEk@Cu@WaGCSEWG]K}@Kg@ES_@mAGSOe@Us@k@aBCIACQc@c@u@W[IK[O{@c@MGKEUCaDa@G?eCDG?i@?s@?_@?I?@T@TB`@BRBT@R?PN?HALAPEj@E`@AL?
+			</geometry>
+		</leg>
+		<leg Cost="1.2" duration="1480" walkingDistance="0">
+			<transportType type="walk" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+            <geometry>ewexGmu{bAM?a@@k@DQDM@I@O?a@J]La@RSNMHKHKFCDs@e@UOWMGEm@g@OO}At@a@Rw@^[NYLIBkAh@{@`@_@P_A`@ULOF_@PmAl@EBi@Tq@XQHQHYN]NGBUJc@ToAl@mCnAIDCKCO_AcFAWj@UFE
+			</geometry>
+		</leg>
+	</route>
+	<route id="5" color="#00BFFF" noOfChanges="2" utility="0.0">
+		<leg Cost="1.1" duration="1111" walkingDistance="0">
+			<transportType type="car" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>accxGos{bAwAn@IDHn@D^PzALhAJ~@DV@HP`BVxB@D@JJ|@Hr@Hl@Dd@LzA@LBVW@OBWFY@U@U?yCDG?U?E?q@EkAIQ?}@CeABm@BIAKCAA]UWQe@_@[Y??OEGCC?u@HIB_@DI@I@k@Hk@JcANO@oBVC?[DYDkALOBOBqC\iAP]DUDC?K?I?Q?U@E@E?c@B]D[FQDw@LI@c@PKF]RKBKAGSEc@CUCc@OcC?IEk@Cu@WaGCSEWG]K}@Kg@ES_@mAGSOe@Us@k@aBCIACQc@c@u@W[IK[O{@c@MGKEUCaDa@G?eCDG?i@?s@?_@?I?eABW@MBODa@Pe@Ro@^s@ZMH}At@a@Rw@^[NEFCJBLFDn@^\Pd@XD@~@h@^R`@XFDDD`@TBBtAv@DBDBt@b@VNLH`B|@^T`An@BBLGF[
+			</geometry>
+		</leg>
+		<leg Cost="1.1" duration="1548" walkingDistance="0">
+			<transportType type="walk" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>        <geometry>ivexGmc{bAGZMFCCaAo@_@UEA{A{@MIWOu@c@ECECuAw@CCa@UEEGEa@Y_@S_Ai@EAe@Y]Qo@_@GESIIEkAh@{@`@_@P_A`@ULOF_@PmAl@EBi@Tq@XQHQHYN]NGBUJc@ToAl@mCnAIDCKCO_AcFAWj@UFE
+			</geometry>
+		</leg>
+	</route>	
+	<route id="6" color="#DDA0DD" noOfChanges="0" utility="0.0">
+		<leg Cost="0" duration="3768" walkingDistance="0">
+			<transportType type="walk" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>accxGos{bAwAn@IDKw@Im@Iq@Ks@CBEEKHwCrCIBG@u@HqBVoBXE@E@G?WDe@Dk@FKH}APe@De@FE@?HA?C@m@BQCO@QFE@_@HOeBEcAqBa@o@HIcAw@Nk@JG@MDs@NaAL{@P[D]DGCEGCw@u@?s@Iy@Uc@IQCSAaBLEKCOEAc@Ma@Qs@Qc@EU?_ASm@GoA_@ADADGEETIh@UCaDa@G?eCDG?i@?s@?_@?I?eABW@MBODa@Pe@Ro@^s@ZMH}At@a@Rw@^[NYLIBkAh@{@`@_@P_A`@ULOF_@PmAl@EBi@Tq@XQHQHYN]NGBUJc@ToAl@mCnAIDCKCO_AcFAWj@UFE
+			</geometry>
+		</leg>
+	</route>
+</routes>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robustnessAnnotation>
+	<fragment name="UMS_manageTrip.xml">
+		<activity name="UMS_TripManagementRequest" compensable="true" deterministic="false" write="true" robustness="94"/>
+	</fragment>
+	<fragment name="UMS_manageTrip.xml">
+		<activity name="UMS_ManagementTrip" compensable="true" deterministic="false" write="true" robustness="97"/>
+	</fragment>
+	<fragment name="UMS_manageTrip.xml">
+		<activity name="UMS_TripManagementReply" compensable="true" deterministic="false" write="true" robustness="90"/>
+	</fragment>
+</robustnessAnnotation>

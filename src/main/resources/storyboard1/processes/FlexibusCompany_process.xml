@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:process name="FlexibusCompany_Core" xmlns:tns="http://das.fbk.eu/Process" xmlns:tns1="http://das.fbk.eu/Annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://das.fbk.eu/Process Process.xsd ">
+
+<tns:receive name="RegistrationRequest">
+</tns:receive>
+
+<tns:invoke name="RegistrationAck">
+</tns:invoke>
+
+<tns:receive name="FlexibusBookingRequest">
+</tns:receive>
+
+<tns:invoke name="BookingResult">
+</tns:invoke>
+
+</tns:process>

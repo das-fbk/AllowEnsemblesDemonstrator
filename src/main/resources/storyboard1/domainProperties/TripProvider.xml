@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:domainProperty id="TripProvider" xmlns:tns="http://das.fbk.eu/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://das.fbk.eu/DomainProperty ../Schemata/DomainProperty.xsd ">
+
+    <tns:state isInitial="true">RINIT</tns:state>
+    <tns:state>REQUESTLOADED</tns:state>
+    <tns:state>ALTERNATIVESSENT</tns:state>
+
+
+    <tns:event>tripRequested</tns:event>
+    <tns:event>replyReceived</tns:event>
+
+
+    <tns:transition isControllable="true">
+      <tns:from>RINIT</tns:from>
+      <tns:to>REQUESTLOADED</tns:to>
+      <tns:event>tripRequested</tns:event>
+    </tns:transition>
+    <tns:transition isControllable="true">
+      <tns:from>REQUESTLOADED</tns:from>
+      <tns:to>ALTERNATIVESSENT</tns:to>
+      <tns:event>replyReceived</tns:event>
+    </tns:transition>
+
+</tns:domainProperty>
+

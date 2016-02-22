@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:domainProperty id="RoutePassengerStatus" xmlns:tns="http://das.fbk.eu/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://das.fbk.eu/Process ../../../../../../../schema-allow-ensembles/schema/allow-ensembles/DomainProperty.xsd ">
+  
+  <tns:state isInitial="true">INITIAL</tns:state>
+  <tns:state>PASSENGER_DETAILS_DEFINED</tns:state>
+  <tns:state>PICKUP_POINT_REACHED</tns:state>
+  <tns:state>FLEXIBUS_ARRIVED</tns:state>
+  <tns:state>PASSENGER_CHECKED_IN</tns:state>
+  <tns:state>DESTINATION_REACHED</tns:state>
+  
+  <tns:event>setupDetails</tns:event>
+  <tns:event>reachPickupPoint</tns:event> 
+  <tns:event>waitFlexibus</tns:event> 
+  <tns:event>checkInOnFlexibus</tns:event> 
+  <tns:event>reachDestination</tns:event> 
+  
+  <tns:transition isControllable="true">
+    <tns:from>INITIAL</tns:from>
+    <tns:to>PASSENGER_DETAILS_DEFINED</tns:to>
+    <tns:event>setupDetails</tns:event>
+  </tns:transition>
+  
+  <tns:transition isControllable="true">
+    <tns:from>PASSENGER_DETAILS_DEFINED</tns:from>
+    <tns:to>PICKUP_POINT_REACHED</tns:to>
+    <tns:event>reachPickupPoint</tns:event>
+  </tns:transition>
+  
+  <tns:transition isControllable="true">
+    <tns:from>PICKUP_POINT_REACHED</tns:from>
+    <tns:to>FLEXIBUS_ARRIVED</tns:to>
+    <tns:event>waitFlexibus</tns:event>
+  </tns:transition>
+  
+  <tns:transition isControllable="true">
+    <tns:from>FLEXIBUS_ARRIVED</tns:from>
+    <tns:to>PASSENGER_CHECKED_IN</tns:to>
+    <tns:event>checkInOnFlexibus</tns:event>
+  </tns:transition>
+  
+  <tns:transition isControllable="true">
+    <tns:from>PASSENGER_CHECKED_IN</tns:from>
+    <tns:to>DESTINATION_REACHED</tns:to>
+    <tns:event>reachDestination</tns:event>
+  </tns:transition>
+  
+</tns:domainProperty>

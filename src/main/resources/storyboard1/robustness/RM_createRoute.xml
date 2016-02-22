@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robustnessAnnotation>
+	<fragment name="RM_createRoute.xml">
+		<activity name="RM_RouteCreationRequest" compensable="true" deterministic="false" write="true" robustness="96"/>
+	</fragment>
+	<fragment name="RM_createRoute.xml">
+		<activity name="RM_RouteCreationReply" compensable="true" deterministic="false" write="true" robustness="92"/>
+	</fragment>
+</robustnessAnnotation>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robustnessAnnotation>
+	<fragment name="RP_checkInAtPickupPoint.xml">
+		<activity name="RP_PickupPointCheckIn" compensable="true" deterministic="false" write="true" robustness="90"/>
+	</fragment>
+	<fragment name="RP_checkInAtPickupPoint.xml">
+		<activity name="RP_PickupPointCheckInAck" compensable="true" deterministic="false" write="true" robustness="98"/>
+	</fragment>
+</robustnessAnnotation>

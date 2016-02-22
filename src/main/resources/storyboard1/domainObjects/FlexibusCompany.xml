@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:domainObject name="FlexibusCompany" xmlns:tns="http://das.fbk.eu/DomainObject" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://das.fbk.eu/DomainObject ../../../schema/allow-ensembles/DomainObject.xsd ">
+  
+  <tns:domainKnowledge>
+    <tns:internalDomainProperty name="domainProperties/FlexibusTrip"/>
+    <tns:externalDomainProperty name="domainProperties/HandleRoute"/>
+    <tns:externalDomainProperty name="domainProperties/RoutePassengerStatus"/>
+    <tns:externalDomainProperty name="domainProperties/FlexibusDriverStatus"/>
+<!--     <tns:externalDomainProperty name="domainProperties/FlexibusPlanner"/> -->
+	<tns:externalDomainProperty name="domainProperties/HandlePayment"/>
+  </tns:domainKnowledge>
+    
+  <tns:process name="processes/PROC_FlexibusCompany"/>
+  
+  <tns:fragment name="fragments/FC_userRegistration"/>
+  <tns:fragment name="fragments/FC_userLogin"/>
+  <tns:fragment name="fragments/FC_flexibusBooking"/>
+  <tns:fragment name="fragments/FC_driverLogin"/>
+  <tns:fragment name="fragments/FC_routeAssignment"/>
+</tns:domainObject>

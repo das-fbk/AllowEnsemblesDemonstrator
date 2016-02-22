@@ -1,0 +1,11 @@
+split1atlinkfor12_284_12;;osm:node:265659073
+osm:node:265659073;;osm:node:264726758->osm:node:265659073->1
+osm:node:264726758->osm:node:265659073->1;;osm:node:264726758
+osm:node:264726758;;osm:node:264726754->osm:node:264726758->2
+osm:node:264726754->osm:node:264726758->2;;osm:node:264726754->osm:node:264726758->1
+osm:node:264726754->osm:node:264726758->1;;osm:node:264726754
+osm:node:264726754;;osm:node:264726754->osm:node:264726750->1
+osm:node:264726754->osm:node:264726750->1;;osm:node:264726754->osm:node:264726750->2
+osm:node:264726754->osm:node:264726750->2;;osm:node:264726750
+osm:node:264726750;;osm:node:1311009050->osm:node:264726750->1
+osm:node:1311009050->osm:node:264726750->1;;osm:node:1311009050

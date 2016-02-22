@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:domainObject name="MultimodalPlanner" xmlns:tns="http://das.fbk.eu/DomainObject" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://das.fbk.eu/DomainObject ../../../schema/allow-ensembles/DomainObject.xsd ">
+  <tns:domainKnowledge>
+      <tns:internalDomainProperty name="domainProperties/MultiModalPlanner" />
+  </tns:domainKnowledge>
+  <tns:process name="processes/PROC_MultiModalPlanner"/>
+  <tns:fragment name="fragments/MMP_plan" />
+</tns:domainObject>

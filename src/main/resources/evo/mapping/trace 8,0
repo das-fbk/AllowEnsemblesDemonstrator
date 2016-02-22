@@ -1,0 +1,9 @@
+osm:node:432847976;;osm:node:282234576
+osm:node:282234576;;osm:node:282234877->osm:node:282234576->1
+osm:node:282234877->osm:node:282234576->1;;osm:node:282234877
+osm:node:282234877;;osm:node:261730673->osm:node:282234877->1
+osm:node:261730673->osm:node:282234877->1;;osm:node:261730673
+osm:node:261730673;;osm:node:282234439
+osm:node:282234439;;osm:node:1281616560->osm:node:282234439->1
+osm:node:1281616560->osm:node:282234439->1;;osm:node:1281616560
+osm:node:1281616560;;osm:node:1281616560->osm:node:1281617288->1

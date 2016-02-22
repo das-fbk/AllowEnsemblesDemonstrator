@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robustnessAnnotation>
+	<fragment name="RM_endRoute.xml">
+		<activity name="RM_CheckInClosedNotice" compensable="true" deterministic="false" write="true" robustness="91"/>
+	</fragment>
+	<fragment name="RM_endRoute.xml">
+		<activity name="RM_EndRouteRequest" compensable="true" deterministic="false" write="true" robustness="96"/>
+	</fragment>
+	<fragment name="RM_endRoute.xml">
+		<activity name="RM_EndRouteReply" compensable="true" deterministic="false" write="true" robustness="94"/>
+	</fragment>
+</robustnessAnnotation>

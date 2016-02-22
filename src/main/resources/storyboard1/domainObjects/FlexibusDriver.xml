@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:domainObject name="FlexibusDriver" xmlns:tns="http://das.fbk.eu/DomainObject" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://das.fbk.eu/DomainObject ../../../schema/allow-ensembles/DomainObject.xsd ">
+  
+  <tns:domainKnowledge>
+    <tns:internalDomainProperty name="domainProperties/FlexibusDriverStatus"/>
+    <tns:externalDomainProperty name="domainProperties/HandleRoute"/>
+  </tns:domainKnowledge>
+    
+  <tns:process name="processes/PROC_FlexibusDriver"/>
+  
+  <tns:fragment name="fragments/FD_takeTheFlexibus"/> 
+  <tns:fragment name="fragments/FD_executeFlexibusRoute"/>
+  <tns:fragment name="fragments/FD_closeRoute"/>
+  
+</tns:domainObject>

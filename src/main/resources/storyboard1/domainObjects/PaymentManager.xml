@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:domainObject name="PaymentManager" xmlns:tns="http://das.fbk.eu/DomainObject" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://das.fbk.eu/DomainObject ../../../schema/allow-ensembles/DomainObject.xsd ">
+  
+  <tns:domainKnowledge>
+    <tns:internalDomainProperty name="domainProperties/HandlePayment"/>
+    <tns:externalDomainProperty name="domainProperties/PayPalPayment"/>
+    <tns:externalDomainProperty name="domainProperties/CreditCardPayment"/>
+  </tns:domainKnowledge>
+    
+  <tns:process name="processes/PROC_PaymentManager"/>
+  
+  <tns:fragment name="fragments/PM_ticketPayment"/>
+  
+</tns:domainObject>

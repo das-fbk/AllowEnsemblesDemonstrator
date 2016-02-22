@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<!-- Flexibus driver A -->
+	<route id="1" color="#FF0000" noOfChanges="0" utility="0.0"
+		flexibusRoute="true">
+		<!-- DRIVER A FROM GARDOLO TO STAZIONE FS -->
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="flexibus" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>}elxGwwybAlDgI|@eBzAkAhD{A`DyA~EsA~@YpJcBnEy@lBo@h@B?XPXVKJ]ISNU\Q`Bg@RCbIiAbHoBh@?rGAdMC~@QdB_@r@EjDL|C_Bb@W`BXpAETInDmDb@e@bAu@jAIXnFf@zK}C`B_@Li@?]C[LUj@Hr@JN`@JXOVs@\s@`HeDvX{MzMsGrCpBvDtBzCbBxBtAlC`BIh@L\tDtBZmA</geometry>
+		</leg>
+		<!-- DRIVER A FROM STAZIONE FS TO PALATRENTO -->
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="flexibus" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>ekexGuwzbAHDfGq@h@BXSjAWxBU`@?`@AZS|AkBlA{@SgBXw@?G?gAdACvAYGqAs@{L[sF@eAp@\tFvCh@LbCwN~CpA|B|@~@n@Tk@hBuBv@_AbLsSx@\fHxC^_C~@iGRBLQlFrGAb@H\XLPnAfAhIvFaClDw@tD?VAhCQdAUbDyAb@UxBsARZJAJI?g@^[j@S~A@zF\^BhGJd@JfAAz@ATH`J}@jCYj@DZNt@v@Ef@FZRNX?JQDe@lGvAt@GnGo@lDHpDb@pA?dAEXC|Ak@lAy@nAa@lJsBVFHX@f@Gl@iKxWMdAHbAXj@]ZQr@?fATf@h@\l@AxAs@\e@Lm@M{AUWw@[OYA[Ds@^s@F]C]O_@YOoA@q@^]pCc@jB{@vAwFxEoAb@}Ch@</geometry>
+		</leg>
+	</route>
+	<!-- USER 1: From Lavis to Poli Parking by Car" -->
+	<route id="2" color="#FF0000" noOfChanges="0" utility="0.0">
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="car" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>__txGwlvbAD]bBVPPDNCJAPBTDJHHJBJANMDOBSCOEM@_@?YCs@?oBJi@Ga@B}BJoAbBIn@FXPRXBPHNJHLDJ?PGNWDU@QCUBg@Hk@h@s@`@s@`@_AlCmIf@aBh@eBZkAL]HMHSDCBCDGFGBCBCDAFAFABCDG@E?E?KCGAGCEAQ?O@Yl@oBh@gBf@aBZcAL[N]N[l@aAr@u@`Ao@\Ql@YdA_@bA_@VKNEjAe@~@]`@QbC_AxB_ArBs@LEJEbEaBHCDAzAYPCPA^Av@CbCDl@@rBj@pDbA|Ab@NDnJhC`MzGfChAt@TXFnQpDxHfB~Cf@L?x@BjACvAGtAI\ATAl@EbHa@VARANAb@Cd@C~AGxCSnCk@vCw@B?f@MvBe@~Cu@bGwAtKkCjQkET?LDJFDRAj@UZYPm@Vo@FOBGHELPj@DRHVFTZlABF\Y
+			</geometry>
+		</leg>
+		<!-- USER 1: From Poli to Gardolo (FLexiBus PickUp Point)" -->
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="walk" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>q~kxGcoxbA]XCG[mAGUIWESQk@K_@G_@CIE[MeAI{@Go@CQKmAGe@Ce@COMoA??OqAC_@CMAEEC@E@K?KAKEIGGIAE?SOQa@CYCGEDOI</geometry>
+		</leg>
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="flexibus" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>}elxGwwybAlDgI|@eBzAkAhD{A`DyA~EsA~@YpJcBnEy@lBo@h@B?XPXVKJ]ISNU\Q`Bg@RCbIiAbHoBh@?rGAdMC~@QdB_@r@EjDL|C_Bb@W`BXpAETInDmDb@e@bAu@jAIXnFf@zK}C`B_@Li@?]C[LUj@Hr@JN`@JXOVs@\s@`HeDvX{MzMsGrCpBvDtBzCbBxBtAlC`BIh@L\tDtBZmA</geometry>
+		</leg>
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="flexibus" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>ekexGuwzbAHDfGq@h@BXSjAWxBU`@?`@AZS|AkBlA{@SgBXw@?G?gAdACvAYGqAs@{L[sF@eAp@\tFvCh@LbCwN~CpA|B|@~@n@Tk@hBuBv@_AbLsSx@\fHxC^_C~@iGRBLQlFrGAb@H\XLPnAfAhIvFaClDw@tD?VAhCQdAUbDyAb@UxBsARZJAJI?g@^[j@S~A@zF\^BhGJd@JfAAz@ATH`J}@jCYj@DZNt@v@Ef@FZRNX?JQDe@lGvAt@GnGo@lDHpDb@pA?dAEXC|Ak@lAy@nAa@lJsBVFHX@f@Gl@iKxWMdAHbAXj@]ZQr@?fATf@h@\l@AxAs@\e@Lm@M{AUWw@[OYA[Ds@^s@F]C]O_@YOoA@q@^]pCc@jB{@vAwFxEoAb@}Ch@</geometry>
+		</leg>
+	</route>
+	<!--USER 2 FROM HOME TO FLEXI BUS STOP WALKING -->
+	<route id="3" color="#FF0000" noOfChanges="0" utility="0.0">
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="walk" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>qblxGyazbAXv@e@hAM\c@`Aa@`AMZCBWn@cA`CCNRdBEDOI</geometry>
+		</leg>
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="flexibus" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>}elxGwwybAlDgI|@eBzAkAhD{A`DyA~EsA~@YpJcBnEy@lBo@h@B?XPXVKJ]ISNU\Q`Bg@RCbIiAbHoBh@?rGAdMC~@QdB_@r@EjDL|C_Bb@W`BXpAETInDmDb@e@bAu@jAIXnFf@zK}C`B_@Li@?]C[LUj@Hr@JN`@JXOVs@\s@`HeDvX{MzMsGrCpBvDtBzCbBxBtAlC`BIh@L\tDtBZmA</geometry>
+		</leg>
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="flexibus" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>ekexGuwzbAHDfGq@h@BXSjAWxBU`@?`@AZS|AkBlA{@SgBXw@?G?gAdACvAYGqAs@{L[sF@eAp@\tFvCh@LbCwN~CpA|B|@~@n@Tk@hBuBv@_AbLsSx@\fHxC^_C~@iGRBLQlFrGAb@H\XLPnAfAhIvFaClDw@tD?VAhCQdAUbDyAb@UxBsARZJAJI?g@^[j@S~A@zF\^BhGJd@JfAAz@ATH`J}@jCYj@DZNt@v@Ef@FZRNX?JQDe@lGvAt@GnGo@lDHpDb@pA?dAEXC|Ak@lAy@nAa@lJsBVFHX@f@Gl@iKxWMdAHbAXj@]ZQr@?fATf@h@\l@AxAs@\e@Lm@M{AUWw@[OYA[Ds@^s@F]C]O_@YOoA@q@^]pCc@jB{@vAwFxEoAb@}Ch@</geometry>
+		</leg>
+	</route>
+	<!-- USER 3 FROM VIA BRESCIA TO STAZIONE FS VIA BIKE -->
+	<route id="6" color="#FF0000" noOfChanges="0" utility="0.0">
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="bicycle" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>{iexGetxbALWTm@h@oAFMFOFQ@EDGPe@^{APcAFqA?q@@U?[?MAMAUMcAKe@I_@Ic@Ec@AU@YDo@PeAHW?O@MFSDILGJCNBHFN{@@Ez@iF@GBYAAACCEAE@Q@GDGBAC]KUCIIQMUIQISG[AYBM@K@E\}AB_@Cc@Ie@u@gDOw@O[EJ_@?[FQAE?ICiAFE?G@E?QAKCKGUO</geometry>
+		</leg>
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="flexibus" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>ekexGuwzbAHDfGq@h@BXSjAWxBU`@?`@AZS|AkBlA{@SgBXw@?G?gAdACvAYGqAs@{L[sF@eAp@\tFvCh@LbCwN~CpA|B|@~@n@Tk@hBuBv@_AbLsSx@\fHxC^_C~@iGRBLQlFrGAb@H\XLPnAfAhIvFaClDw@tD?VAhCQdAUbDyAb@UxBsARZJAJI?g@^[j@S~A@zF\^BhGJd@JfAAz@ATH`J}@jCYj@DZNt@v@Ef@FZRNX?JQDe@lGvAt@GnGo@lDHpDb@pA?dAEXC|Ak@lAy@nAa@lJsBVFHX@f@Gl@iKxWMdAHbAXj@]ZQr@?fATf@h@\l@AxAs@\e@Lm@M{AUWw@[OYA[Ds@^s@F]C]O_@YOoA@q@^]pCc@jB{@vAwFxEoAb@}Ch@</geometry>
+		</leg>
+	</route>
+	<!-- Flexibus driver B -->
+	<route id="10" color="#FF0000" noOfChanges="0" utility="0.0"
+		flexibusRoute="true">
+		<!-- DRIVER B FROM POVO PIAZZA MANCI TO PORTAQUILA -->
+		<!-- STARTING POSITION:46.065971,11.15458000000001 -->
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="flexibus" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>yfdxGusacA^r@b@d@z@xAdAbCxAbFhA@j@CtBOxEPP`AD~ALz@PjAoCx@iCFcA@GWQIUXF^LH@d@O~FOj@o@LyCm@mA@qA~@{AfBG|@B\Vt@t@jATX`FjGLh@AfA_BbPMdAYjBQXSJiDZ}BFQHUn@UbCKx@Q`@]Jm@C[Ss@kCqByCi@Wc@Fa@Vw@|@[ZaAv@OQUBKT?ZRXRERLdB~ALf@NdCEh@Ud@mBz@QPElAJh@`@NpC^bFl@xFYVA^PhArBT|@^fCB~@IfBSp@oA`@Q`@EbAFr@Bj@MlAaClHgB`De@h@yAbA_HnCIx@</geometry>
+		</leg>
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="flexibus" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>q|dxGeq|bARK~@_@z@a@zAo@v@_@\]LMDHBELQELFDGd@CxAzAbAFQLa@Le@DBHD@C@A@A@?B?BM@E`Br@vB~@NF`CfALD@GJHLFABCPrAl@FBp@Z@?dBv@pAn@\\l@x@j@`AL^Rt@HVHG|@y@z@y@`EyDHIDEPQtCqCDHDG~ChFJNFL\c@B?BEZj@n@p@`CvBZXnAfAz@t@bFvElAjAlAfAjAdAJJn@Xl@L`AbAj@f@ZXV\|AhA@@JFFKHI@NBPDHFH|@h@fBfAHFp@Vx@Xb@F`@@TCXDh@Zp@`@d@f@VRXFr@NrBx@VFt@Jd@@f@C`@I`@M\OLIBJzAgA|CqBbAq@~@q@dAw@VSRYJGLCLKpEaD^WpDeBpAi@XQ\QXGnAQA\?f@AlBbA@</geometry>
+		</leg>
+		<!-- DRIVER B PORTAQUILA TO PALATRENTO -->
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="flexibus" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>q|dxGeq|bARK~@_@z@a@zAo@v@_@\]LMDHBELQELFDGd@CxAzAbAFQLa@Le@DBHD@C@A@A@?B?BM@E`Br@vB~@NF`CfALD@GJHLFABCPrAl@FBp@Z@?dBv@pAn@\\l@x@j@`AL^Rt@HVHG|@y@z@y@`EyDHIDEPQtCqCDHDG~ChFJNFL\c@B?BEZj@n@p@`CvBZXnAfAz@t@bFvElAjAlAfAjAdAJJn@Xl@L`AbAj@f@ZXV\|AhA@@JFFKHI@NBPDHFH|@h@fBfAHFp@Vx@Xb@F`@@TCXDh@Zp@`@d@f@VRXFr@NrBx@VFt@Jd@@f@C`@I`@M\OLIBJzAgA|CqBbAq@~@q@dAw@VSRYJGLCLKpEaD^WpDeBpAi@XQ\QXGnAQA\?f@AlBbA@</geometry>
+		</leg>
+	</route>
+	<!-- USER4 WALK FROM VIA MADONNINA TO PIAZZA MANCI POVO -->
+	<route id="11" color="#FF0000" noOfChanges="0" utility="0.0">
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="walk" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>m`dxGm`bcA[^DHINIRNnAAlAIbAE|BDNMRe@Di@CEFIF??o@y@IK</geometry>
+		</leg>
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="flexibus" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>yfdxGusacA^r@b@d@z@xAdAbCxAbFhA@j@CtBOxEPP`AD~ALz@PjAoCx@iCFcA@GWQIUXF^LH@d@O~FOj@o@LyCm@mA@qA~@{AfBG|@B\Vt@t@jATX`FjGLh@AfA_BbPMdAYjBQXSJiDZ}BFQHUn@UbCKx@Q`@]Jm@C[Ss@kCqByCi@Wc@Fa@Vw@|@[ZaAv@OQUBKT?ZRXRERLdB~ALf@NdCEh@Ud@mBz@QPElAJh@`@NpC^bFl@xFYVA^PhArBT|@^fCB~@IfBSp@oA`@Q`@EbAFr@Bj@MlAaClHgB`De@h@yAbA_HnCIx@</geometry>
+		</leg>
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="flexibus" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>q|dxGeq|bARK~@_@z@a@zAo@v@_@\]LMDHBELQELFDGd@CxAzAbAFQLa@Le@DBHD@C@A@A@?B?BM@E`Br@vB~@NF`CfALD@GJHLFABCPrAl@FBp@Z@?dBv@pAn@\\l@x@j@`AL^Rt@HVHG|@y@z@y@`EyDHIDEPQtCqCDHDG~ChFJNFL\c@B?BEZj@n@p@`CvBZXnAfAz@t@bFvElAjAlAfAjAdAJJn@Xl@L`AbAj@f@ZXV\|AhA@@JFFKHI@NBPDHFH|@h@fBfAHFp@Vx@Xb@F`@@TCXDh@Zp@`@d@f@VRXFr@NrBx@VFt@Jd@@f@C`@I`@M\OLIBJzAgA|CqBbAq@~@q@dAw@VSRYJGLCLKpEaD^WpDeBpAi@XQ\QXGnAQA\?f@AlBbA@</geometry>
+		</leg>
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="flexibus" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>q|dxGeq|bARK~@_@z@a@zAo@v@_@\]LMDHBELQELFDGd@CxAzAbAFQLa@Le@DBHD@C@A@A@?B?BM@E`Br@vB~@NF`CfALD@GJHLFABCPrAl@FBp@Z@?dBv@pAn@\\l@x@j@`AL^Rt@HVHG|@y@z@y@`EyDHIDEPQtCqCDHDG~ChFJNFL\c@B?BEZj@n@p@`CvBZXnAfAz@t@bFvElAjAlAfAjAdAJJn@Xl@L`AbAj@f@ZXV\|AhA@@JFFKHI@NBPDHFH|@h@fBfAHFp@Vx@Xb@F`@@TCXDh@Zp@`@d@f@VRXFr@NrBx@VFt@Jd@@f@C`@I`@M\OLIBJzAgA|CqBbAq@~@q@dAw@VSRYJGLCLKpEaD^WpDeBpAi@XQ\QXGnAQA\?f@AlBbA@</geometry>
+		</leg>
+	</route>
+	<!-- USER4_BIS WALK FROM VIA SALE' TO PIAZZA MANCI POVO -->
+	<route id="12" color="#FF0000" noOfChanges="0" utility="0.0">
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="walk" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>uzcxG{bacAE?a@Ba@BQ@K]sAkEAKo@_B]o@m@_AQQo@y@IK</geometry>
+		</leg>
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="flexibus" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>yfdxGusacA^r@b@d@z@xAdAbCxAbFhA@j@CtBOxEPP`AD~ALz@PjAoCx@iCFcA@GWQIUXF^LH@d@O~FOj@o@LyCm@mA@qA~@{AfBG|@B\Vt@t@jATX`FjGLh@AfA_BbPMdAYjBQXSJiDZ}BFQHUn@UbCKx@Q`@]Jm@C[Ss@kCqByCi@Wc@Fa@Vw@|@[ZaAv@OQUBKT?ZRXRERLdB~ALf@NdCEh@Ud@mBz@QPElAJh@`@NpC^bFl@xFYVA^PhArBT|@^fCB~@IfBSp@oA`@Q`@EbAFr@Bj@MlAaClHgB`De@h@yAbA_HnCIx@</geometry>
+		</leg>
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="flexibus" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>q|dxGeq|bARK~@_@z@a@zAo@v@_@\]LMDHBELQELFDGd@CxAzAbAFQLa@Le@DBHD@C@A@A@?B?BM@E`Br@vB~@NF`CfALD@GJHLFABCPrAl@FBp@Z@?dBv@pAn@\\l@x@j@`AL^Rt@HVHG|@y@z@y@`EyDHIDEPQtCqCDHDG~ChFJNFL\c@B?BEZj@n@p@`CvBZXnAfAz@t@bFvElAjAlAfAjAdAJJn@Xl@L`AbAj@f@ZXV\|AhA@@JFFKHI@NBPDHFH|@h@fBfAHFp@Vx@Xb@F`@@TCXDh@Zp@`@d@f@VRXFr@NrBx@VFt@Jd@@f@C`@I`@M\OLIBJzAgA|CqBbAq@~@q@dAw@VSRYJGLCLKpEaD^WpDeBpAi@XQ\QXGnAQA\?f@AlBbA@</geometry>
+		</leg>
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="flexibus" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>q|dxGeq|bARK~@_@z@a@zAo@v@_@\]LMDHBELQELFDGd@CxAzAbAFQLa@Le@DBHD@C@A@A@?B?BM@E`Br@vB~@NF`CfALD@GJHLFABCPrAl@FBp@Z@?dBv@pAn@\\l@x@j@`AL^Rt@HVHG|@y@z@y@`EyDHIDEPQtCqCDHDG~ChFJNFL\c@B?BEZj@n@p@`CvBZXnAfAz@t@bFvElAjAlAfAjAdAJJn@Xl@L`AbAj@f@ZXV\|AhA@@JFFKHI@NBPDHFH|@h@fBfAHFp@Vx@Xb@F`@@TCXDh@Zp@`@d@f@VRXFr@NrBx@VFt@Jd@@f@C`@I`@M\OLIBJzAgA|CqBbAq@~@q@dAw@VSRYJGLCLKpEaD^WpDeBpAi@XQ\QXGnAQA\?f@AlBbA@</geometry>
+		</leg>
+	</route>
+	<!-- USER 6 BIKE FROM MARTIGNANO TO PORTAQUILA -->
+	<route id="13" color="#FF0000" noOfChanges="0" utility="0.0">
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="bicycle" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>etgxGsk|bADBLDJSrD?JGH?fASp@UZSR[L_@JWTM^MJKDU@[NDTEp@WvAy@LITBtAk@dAi@LGl@Ab@@|@Dd@IX?~@QF_@@}@NBVFP@\BxATt@Ll@TPNLVt@?\?LBvB`BL@T\`@RRDXKd@?TDTXBLDBN@NH^Tl@h@PTJT?DBL@JGH?Jt@ED?FHL@@D@DD?F?NAL?F?HABAJKNI@?FCNIj@f@r@b@B@F@DFLF`@C^EpA[h@Id@Gd@@D?L??ML@N@B?@A?E@C@c@</geometry>
+		</leg>
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="flexibus" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>q|dxGeq|bARK~@_@z@a@zAo@v@_@\]LMDHBELQELFDGd@CxAzAbAFQLa@Le@DBHD@C@A@A@?B?BM@E`Br@vB~@NF`CfALD@GJHLFABCPrAl@FBp@Z@?dBv@pAn@\\l@x@j@`AL^Rt@HVHG|@y@z@y@`EyDHIDEPQtCqCDHDG~ChFJNFL\c@B?BEZj@n@p@`CvBZXnAfAz@t@bFvElAjAlAfAjAdAJJn@Xl@L`AbAj@f@ZXV\|AhA@@JFFKHI@NBPDHFH|@h@fBfAHFp@Vx@Xb@F`@@TCXDh@Zp@`@d@f@VRXFr@NrBx@VFt@Jd@@f@C`@I`@M\OLIBJzAgA|CqBbAq@~@q@dAw@VSRYJGLCLKpEaD^WpDeBpAi@XQ\QXGnAQA\?f@AlBbA@</geometry>
+		</leg>
+	</route>
+</routes>

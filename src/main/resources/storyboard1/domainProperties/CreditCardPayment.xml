@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:domainProperty id="CreditCardPayment" xmlns:tns="http://das.fbk.eu/Process"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://das.fbk.eu/DomainProperty ../Schemata/DomainProperty.xsd ">
+
+	<tns:state isInitial="true">INITIAL</tns:state>
+	<tns:state>CC_PAYMENT_EXECUTED</tns:state>
+
+
+	<tns:event>executeCC_Payment</tns:event>
+	<tns:event>reset</tns:event>
+
+
+	<tns:transition isControllable="true">
+		<tns:from>INITIAL</tns:from>
+		<tns:to>CC_PAYMENT_EXECUTED</tns:to>
+		<tns:event>executeCC_Payment</tns:event>
+	</tns:transition>
+	
+	<tns:transition isControllable="true">
+		<tns:from>CC_PAYMENT_EXECUTED</tns:from>
+		<tns:to>INITIAL</tns:to>
+		<tns:event>reset</tns:event>
+	</tns:transition>
+
+</tns:domainProperty>

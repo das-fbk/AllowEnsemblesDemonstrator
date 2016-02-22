@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:domainProperty id="CarSharingTrip" xmlns:tns="http://das.fbk.eu/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://das.fbk.eu/DomainProperty ../../../schema/allow-ensembles/DomainProperty.xsd ">
+  
+  <tns:state isInitial="true">INITIAL</tns:state>
+  <tns:state>MEMBERSHIP_DEFINED</tns:state>
+  <tns:state>RESERVATION_REQUESTED</tns:state>
+  <tns:state>RESERVATION_COMPLETED</tns:state>
+  
+  <tns:event>membershipRequested</tns:event>
+  <tns:event>carReservationRequested</tns:event>  
+  <tns:event>carReservationCompleted</tns:event>
+  
+  
+  <tns:transition isControllable="true">
+    <tns:from>INITIAL</tns:from>
+    <tns:to>MEMBERSHIP_DEFINED</tns:to>
+    <tns:event>membershipRequested</tns:event>
+  </tns:transition>
+  
+  <tns:transition isControllable="true">
+    <tns:from>MEMBERSHIP_DEFINED</tns:from>
+    <tns:to>RESERVATION_REQUESTED</tns:to>
+    <tns:event>carReservationRequested</tns:event>
+  </tns:transition>
+  
+   <tns:transition isControllable="true">
+    <tns:from>RESERVATION_REQUESTED</tns:from>
+    <tns:to>RESERVATION_COMPLETED</tns:to>
+    <tns:event>carReservationCompleted</tns:event>
+  </tns:transition>
+    
+</tns:domainProperty>

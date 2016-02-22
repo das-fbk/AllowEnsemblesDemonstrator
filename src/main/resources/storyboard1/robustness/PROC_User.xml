@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robustnessAnnotation>
+	<process name="PROC_User.xml">
+		<activity name="USER_PlanTrip" compensable="true" deterministic="false" write="true" robustness="98"/>
+	</process>
+	<process name="PROC_User.xml">
+		<activity name="USER_ChooseAlternative" compensable="true" deterministic="false" write="true" robustness="94"/>
+	</process>
+	<process name="PROC_User.xml">
+		<activity name="USER_ManageTrip" compensable="true" deterministic="false" write="true" robustness="96"/>
+	</process>
+	<process name="PROC_User.xml">
+		<activity name="USER_ExecuteTrip" compensable="true" deterministic="false" write="true" robustness="92"/>
+	</process>
+	<process name="PROC_User.xml">
+		<activity name="USER_animateTrip" compensable="true" deterministic="true" write="false" robustness="99"/>
+	</process>
+</robustnessAnnotation>

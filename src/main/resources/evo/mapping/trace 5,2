@@ -1,0 +1,17 @@
+split1atlinkfor12_2389_12;;osm:node:268768073
+osm:node:268768073;;osm:node:920688755
+osm:node:920688755;;split1atlinkfor12_358_12
+split1atlinkfor12_358_12;;osm:node:938361206
+osm:node:938361206;;osm:node:1098923022
+osm:node:1098923022;;osm:node:907822728
+osm:node:907822728;;osm:node:907822728->osm:node:1271454337->1
+osm:node:907822728->osm:node:1271454337->1;;osm:node:1271454337
+osm:node:1271454337;;osm:node:1271454106
+osm:node:1271454106;;osm:node:1271454182
+osm:node:1271454182;;osm:node:920688936->osm:node:1271454182->1
+osm:node:920688936->osm:node:1271454182->1;;osm:node:920688936
+osm:node:920688936;;osm:node:1098922944
+osm:node:1098922944;;osm:node:907823976
+osm:node:907823976;;osm:node:907823962->osm:node:907823976->1
+osm:node:907823962->osm:node:907823976->1;;osm:node:907823962
+osm:node:907823962;;osm:node:1271454530

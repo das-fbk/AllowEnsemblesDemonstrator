@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="../../../../schema-allow-ensembles/schema/allow-ensembles/Routes.xsd">
+	<route id="1" color="#FF0000" noOfChanges="0" utility="0.0">
+		<leg Cost="0" duration="1662" walkingDistance="0">
+			<transportType type="car" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>iojxGme|bAf@QLE|@[t@WNGp@[ROL[b@uAP]\U\SnAu@jAs@b@YX]XcAX_AP[TUFCXQl@SXKz@[\[JOXm@`AoBfBuDPa@Ta@LUx@_BVa@Z]\Qd@MXCp@BfEt@hA\ZJI^SfAGb@@r@Dp@BRBV@z@@j@?VNNHJTJV`@LVDFf@\VFXFZFZFPNdB|@`@RfBr@jCrANPJNfAxAj@f@v@XvD`@`CZjAj@DBLDd@VpBv@nAd@??ZJTJ^Jd@Fz@HZDJBFBFBJHDGNMvA[H@HBBDBHAHAFCDs@^aAn@k@RsCl@yTdDcAFwGRy@Nw@PeB~@_@L]LmAr@y@^m@Ts@Tm@PIBi@RqCfBgBdAaBj@oBb@uBt@gBT{BXoAXkAf@qAlAk@|@k@jA[|@_@fBs@jDc@fDOhCGlCBzALhB^tDXnCVfCd@bEnApLvA~MfBfIdBrG`@xA`@|Ab@hAXl@V`@l@p@d@`@j@\\J\J\Db@FX?Z@d@Gx@Qv@YdAk@bDeBzByAlEqC|@}@nAqAzA{B~@oBxAyC|HeQx@eBtBuE|BaFZc@r@w@t@g@f@Sh@O~@Gj@Bl@Hf@NlBv@rEtB^Nn@VhAVpAHvAOhAWd@MbASvASj@Cd@Ax@?fBJhARfAZlCp@jNpHvKxBnDe@hD{@|Ao@TQ|@g@tAe@jAUTEb@E\Ef@GbAA|@?~BTzB`@`Df@~A^xCd@tGhAdDn@ZDrAVtGfAhCd@lCZ~@B~@Cv@Mx@Yt@g@l@u@`BmCjAyBvAmCr@iAh@w@^]j@[\S`@Gl@G|@@|@Rf@NnBj@p@Dd@@f@C\Ed@Ml@Wl@]`BqAf@O|@w@fAw@lAwAl@o@Z_@NYFCP`@|ApD@DFJN\Vl@HNfBbEJLLLRFN@ZCvE{@f@KREj@KlDq@lAW`B[XGzBc@r@Oj@Kb@KRv@z@xD\zA\tAz@lD\|A`@`BLd@Tx@Ln@\dAFTFPNp@BJJh@DTETGHOFKBe@FS@YBW@I?G?K@WBc@B]H
+			</geometry>
+		</leg>
+	</route>
+	<route id="2" color="#FFD700" noOfChanges="0" utility="0.0">
+		<leg Cost="0" duration="2647" walkingDistance="0">
+			<transportType type="bicycle" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>_sjxG_w|bA\UFTr@In@g@Kh@l@Cd@Qf@K^e@JJHd@HGJXTUN^ZmAd@Q`@a@?tAIfAa@z@RGVIXSKf@G^M^M`@BDTKK^E\P?X@FBnAu@jAs@b@YX]TU`@Sj@_@XKXBVRbAj@x@Pd@K^SZQRATNXVZXd@RfAd@p@l@z@Zu@h@u@d@_@^]`@Qf@KTSJS@YCa@@g@b@i@r@k@v@]l@K^a@bAW^YVKJXCh@D~@T^Lf@@n@CVFh@Xl@n@Z`@Zj@Xp@D\BLZNb@Jj@`@j@d@\XJRHf@ZMjDgBFPHCl@Qr@Ul@Ux@_@NJWN_DtB_DrBTh@Zd@z@Jv@?x@YzD@~@DhBG|@GrDu@\Wf@Gj@EhBPl@FX?ZAN@HhAB\N~BHrAHhAZ~E?FCNGN{At@WJMHBN@LWLEDCFAJG@E@CDAH?N?D@FE?GBGLCH?N@RBP^fBXfAj@|BpB|HP`@JLFHTLJBF@B@B?D@h@PRBTALELGJIDEhCqBVSNKRQfA{@DOjA{@H?LKJIlFeEJMFIZUFTDLAH?HBHDF\Nt@ZB@B@nAp@D@DBpAj@JDB@FBCRCR`Ab@FF@NARCLBFBJLILEH@JHDJFADECQ@ODMHGHElBy@tBs@h@QrB_@vB[`@ChBGf@AbA?|@FfBJt@LnANx@Rp@Rz@XjA`@~At@`A\NJFDFBNDlAh@lF|Bl@TPDn@LjL|EpBv@fBj@tE|@~Ez@lE^^@H@tHP~Qd@hSj@hBHr@XhB^~BL`CEpASpA[|@_@~@c@pA}@`B{Ap@w@tBuBtB{BtA_BBGDELBFLHI|ApD@DFJN\Vl@HNfBbEJLLLRFN@ZCvE{@f@KREjD`CdAp@ZNHFJDj@^l@\`@TdAn@RJ|A|@h@Zd@Zb@Tv@d@D@t@b@r@j@DTn@r@JLXQLn@KH]ZUMIBOFuAr@]FG@
+			</geometry>
+		</leg>
+	</route>
+	<route id="3" color="#FFA500" noOfChanges="4" utility="0.0">
+		<leg Cost="0" duration="1598" walkingDistance="0">
+			<transportType type="car" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>iojxGme|bAf@QLE|@[t@WNGp@[ROL[b@uAP]\U\SnAu@jAs@b@YX]XcAX_AP[TUFCXQl@SXKz@[\[JOXm@`AoBfBuDPa@Ta@LUx@_BVa@Z]\Qd@MXCp@BfEt@hA\ZJI^SfAGb@@r@Dp@BRBV@z@@j@?VNNHJTJV`@LVDFf@\VFXFZFZFPNdB|@`@RfBr@jCrANPJNfAxAj@f@v@XvD`@`CZjAj@DBLDd@VpBv@nAd@??ZJTJ^Jd@Fz@HZDJBFBFBJHFLFPJVJVHHJHNFJ@N?HAFAFCFEVSd@}@LS\YhAYbAS^GhAY`@UpDqBj@Sn@OhACr@EVAl@E`@HZFlAVpATZHV?XMTWL_@H]HW@EDIFIFILEd@AV@PJNVHXJXLXHJDDLB\@l@Eh@?VG^U@AFEFCdB{@N@LV@ZELIJEJAR?RBLDFLF`@C^EpA[h@Id@Gd@@R?PDHBD@RDB@^LTFZF`A\@???xAr@|DhBVLNHCF?J@JBFDFDBH@F?DABEBERHj@XnB~@\Pl@Vf@Tf@TdCuNLFrAl@FBp@Z@?dBv@pAn@\\l@x@j@`AL^Rt@HVFV@@Lf@FZ`@jBX`C?FB\LCtCyCVWHf@TdBHl@Jv@Hn@D^PzALhAJ~@DV@HP`BVxB@D@JJ|@Hr@Hl@Dd@LzA@LBVLFNFJBNB|A`@XHJBZDDBbA`@j@Pt@P^FLB@FDNBP@RBPDfA?H@D?DLjBFn@F~@D~@TfDDj@?LFt@@NXhFG@A?C?aAF@Z@\@\Bv@
+			</geometry>
+		</leg>
+        <leg Cost="0" duration="567" walkingDistance="0">
+            <transportType type="walk" />
+            <safety_parameters>
+                <safety_level>0</safety_level>
+                <sparseness_level>0.0</sparseness_level>
+                <pollution_level>0</pollution_level>
+            </safety_parameters>
+            <privacy_parameters>
+                <provider>provider</provider>
+            </privacy_parameters>
+            <geometry>kqbxGqlybACw@A]A]A[?QA[t@EB?BAE{@BQMmBAOGcAHAEk@UgDPC`AGpBQF?
+            </geometry>
+        </leg>
+        <leg Cost="1.20" duration="360" walkingDistance="0">
+            <transportType type="bus" />
+            <safety_parameters>
+                <safety_level>0</safety_level>
+                <sparseness_level>0.0</sparseness_level>
+                <pollution_level>0</pollution_level>
+            </safety_parameters>
+            <privacy_parameters>
+                <provider>provider</provider>
+            </privacy_parameters>
+            <geometry>wjbxG_czbA~Hg@pEs@jA[@?tD}AVTX?NOFWGk@lEzAr@TzBCzFr@fCbAlEbCxAv@`@x@@\]dAa@r@sBdCmDhCuClAqARqBGg@i@o@a@c@O{@Ye@_@Ha@Oi@QQCBa@LM`@?`@JPRVQdB?nDlAHxBM|A[`Bw@z@s@^StCqAnDeCtEiFbDlHfB~D`@d@x@PlF_Ax@OlFpDlDnBpDpBxB~AtDdBn@F`C`KeI~@}Dv@eAj@wFlDq@PeADiAAgJd@CJBPFHJAFIPUxHa@hA?dACt@QvFmDdAg@xDw@vIcAgAkE
+            </geometry>
+        </leg>
+        <leg Cost="1.20" duration="228" walkingDistance="0">
+            <transportType type="walk" />
+            <safety_parameters>
+                <safety_level>0</safety_level>
+                <sparseness_level>0.0</sparseness_level>
+                <pollution_level>0</pollution_level>
+            </safety_parameters>
+            <privacy_parameters>
+                <provider>provider</provider>
+            </privacy_parameters>
+            <geometry>_x~wG_sxbA]eAKH]ZUMIBOFuAr@]FG@
+            </geometry>
+        </leg>
+	</route>
+    <route id="4" color="#FFA500" noOfChanges="5" utility="0.0">
+        <leg Cost="0" duration="4064" walkingDistance="0">
+            <transportType type="walk" />
+            <safety_parameters>
+                <safety_level>0</safety_level>
+                <sparseness_level>0.0</sparseness_level>
+                <pollution_level>0</pollution_level>
+            </safety_parameters>
+            <privacy_parameters>
+                <provider>provider</provider>
+            </privacy_parameters>
+            <geometry>_sjxG_w|bA\UFTr@In@g@Kh@l@Cd@Qf@K^e@JJHd@HGJXTUN^ZmAd@Q`@a@FORSDO`@Y`@w@RINSLG`@}@JOPOL@HHP@Nd@RPV@RF\]^WNEVKTGRc@Te@TWNKzCKLGn@qAHLQ`@
+            </geometry>
+        </leg>
+        <leg Cost="1.20" duration="780" walkingDistance="0">
+            <transportType type="bus" />
+            <safety_parameters>
+                <safety_level>0</safety_level>
+                <sparseness_level>0.0</sparseness_level>
+                <pollution_level>0</pollution_level>
+            </safety_parameters>
+            <privacy_parameters>
+                <provider>provider</provider>
+            </privacy_parameters>
+            <geometry>amixGoh}bAmBrD|Ba@|A@zB[nCf@bAHv@FV^jBh@XHHr@Z^tBp@`GlCdBv@nA~@vAtBxAf@`IdArAl@fGjCl@HzC`@^\z@dBXH`@@d@Y`A}B\YhDg@BAnG_DnA_@tCKj@EjE~@pAHX[`@eA\gAxALz@fC~CQzCaBXPFP@PYzADTNHVB~@_@lAWnAIb@H~@NxC~@Mv@s@U_APa@Ke@LgBzAcG`DE@M`@MtAkAjF@RcBhHsBpI@\NTjDtB
+            </geometry>
+        </leg>
+        <leg Cost="0" duration="108" walkingDistance="0">
+            <transportType type="walk" />
+            <safety_parameters>
+                <safety_level>0</safety_level>
+                <sparseness_level>0.0</sparseness_level>
+                <pollution_level>0</pollution_level>
+            </safety_parameters>
+            <privacy_parameters>
+                <provider>provider</provider>
+            </privacy_parameters>
+            <geometry>ypexG}zzbAZRXH@JZR^VNH
+            </geometry>
+        </leg>
+        <leg Cost="1.20" duration="840" walkingDistance="0">
+            <transportType type="bus" />
+            <safety_parameters>
+                <safety_level>0</safety_level>
+                <sparseness_level>0.0</sparseness_level>
+                <pollution_level>0</pollution_level>
+            </safety_parameters>
+            <privacy_parameters>
+                <provider>provider</provider>
+            </privacy_parameters>
+            <geometry>ilexGsxzbAt@`@~Fo@d@Dj@~GdAe@hDw@|BOzBSvNeBvCi@`@If@H`BpAv@NbOVTAvBSf@JJPjJbCPRNrBd@xHpEY~Hg@pEs@jA[@?tD}AVTX?NOFWGk@lEzAr@TzBCzFr@fCbAlEbCxAv@`@x@@\]dAa@r@sBdCmDhCuClAqARqBGg@i@o@a@c@O{@Ye@_@Ha@Oi@QQCBa@LM`@?`@JPRVQdB?nDlAHxBM|A[`Bw@z@s@^StCqAnDeCtEiFbDlHfB~D`@d@x@PlF_Ax@OlFpDlDnBpDpBxB~AtDdBn@F`C`KeI~@}Dv@eAj@wFlDq@PeADiAAgJd@CJBPFHJAFIPUxHa@hA?dACt@QvFmDdAg@xDw@vIcAgAkE
+            </geometry>
+        </leg>
+        <leg Cost="0" duration="228" walkingDistance="0">
+            <transportType type="walk" />
+            <safety_parameters>
+                <safety_level>0</safety_level>
+                <sparseness_level>0.0</sparseness_level>
+                <pollution_level>0</pollution_level>
+            </safety_parameters>
+            <privacy_parameters>
+                <provider>provider</provider>
+            </privacy_parameters>
+            <geometry>_x~wG_sxbA]eAKH]ZUMIBOFuAr@]FG@
+            </geometry>
+        </leg>
+
+    </route>
+    <route id="5" color="#FFA500" noOfChanges="0" utility="0.0">
+        <leg Cost="0" duration="14991" walkingDistance="0">
+            <transportType type="walk" />
+            <safety_parameters>
+                <safety_level>0</safety_level>
+                <sparseness_level>0.0</sparseness_level>
+                <pollution_level>0</pollution_level>
+            </safety_parameters>
+            <privacy_parameters>
+                <provider>provider</provider>
+            </privacy_parameters>
+            <geometry>_sjxG_w|bA\UFTr@In@g@Kh@l@Cd@Qf@K^e@JJHd@HGJXTUN^ZmAd@Q`@a@FORSDO`@Y`@w@RINSLG`@}@JOPOL@HHP@Nd@RPV@RF\]^WNEVKTGRc@Te@TWNKzCKLGn@qAHLTa@LUA\IPCHEJEPCNFJNFTCX@\Tb@FX@VBZ@FDFRB\@?p@Dt@PPBD@~Bj@JR~@FNNHJTJV`@LVDFf@\VFXFZFZFPNdB|@`@RJRVN\`@v@p@z@|@|@lAZd@d@b@~@h@x@Xx@Jl@Nn@BnAFxDRh@BpBv@nAd@??ZJTJ^Jd@Fz@HZDJBFBFBJHFLFPJVJVHHJHNFJ@N?HAFAFCFEVSd@}@LS\YhAYbAS^GhAY`@UpDqBj@Sn@O\Aj@Ar@EVAl@E`@HZFlAVpATZHV?XMTWL_@H]HW@EDIDHNLp@j@b@Vb@P\BBGLB\@l@E@DD?F?NAL?F?HABAJKNI@?FCNIj@f@r@b@B@F@DFLF`@C^EpA[h@Id@Gd@@D?L?PDHBD@RDB@^LTFZF`A\@???xAr@|DhBVLERFH?F?BCPBBDDd@NB?@?D@LB?JAHf@TDHXNHDf@VhB~@PHNf@HRXp@BDLGNAVKP@@F@FATdA|G\E@L?HE@?HA?HlCBh@@^@b@BNJz@BBFH?HD~@B`@@`@LA?Fb@C@D@h@BHFrA?FDbA@Nt@IB?FBND??ZXd@^VP\T@@JBH@l@CdAC|@BP?jAHp@DD?T?F?xCET?TAXAVGNCVALFNFJBNB|A`@XHJBZDDBbA`@j@Pt@P^FLB@FDDBBD@F?DADABGBG@IF@LF`APJ@n@Aj@IBAh@GHCd@Gb@ELCV?F?J?Z@hBr@TFZ@XAxAQRERCBC\Sf@_@FC`A_@BAn@WJCH?FBDDDJHRj@bCJ`@HIHZJPBHFDLCTHPFHFt@VB@l@PRFXHlA`@b@Cv@GZB|B^TBz@LlATl@TnCxAbBz@XN\P`@VT`@L\CL?J@JDLJJR?FCP`@|ApD@DFJN\Vl@HNfBbEJLLLRFN@ZCvE{@f@KREjD`CdAp@ZNHFJDj@^l@\`@TdAn@RJ|A|@h@Zd@Zb@Tv@d@D@t@b@r@j@DTn@r@JLXQLn@KH]ZUMIBOFuAr@]FG@
+            </geometry>
+        </leg>
+    </route>
+</routes>

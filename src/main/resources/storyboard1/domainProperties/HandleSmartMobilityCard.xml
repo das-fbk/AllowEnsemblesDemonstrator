@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:domainProperty id="HandleSmartMobilityCard" xmlns:tns="http://das.fbk.eu/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://das.fbk.eu/Process ../../../../../../../schema-allow-ensembles/schema/allow-ensembles/DomainProperty.xsd ">
+  
+  <tns:state isInitial="true">INITIAL</tns:state>
+  <tns:state>CARD_RELEASED</tns:state>
+  <tns:state>AMOUNT_VERIFIED</tns:state>
+  <tns:state>SERVICE_ADDED</tns:state>
+  
+  <tns:event>smartCardReleased</tns:event>
+  <tns:event>amountVerified</tns:event>
+  <tns:event>serviceAdded</tns:event>
+  <tns:event>goBack</tns:event>    
+  
+  <tns:transition isControllable="true">
+    <tns:from>INITIAL</tns:from>
+    <tns:to>CARD_RELEASED</tns:to>
+    <tns:event>smartCardReleased</tns:event>
+  </tns:transition>
+  
+  <tns:transition isControllable="true">
+    <tns:from>CARD_RELEASED</tns:from>
+    <tns:to>AMOUNT_VERIFIED</tns:to>
+    <tns:event>amountVerified</tns:event>
+  </tns:transition>
+  
+  <tns:transition isControllable="true">
+    <tns:from>AMOUNT_VERIFIED</tns:from>
+    <tns:to>SERVICE_ADDED</tns:to>
+    <tns:event>serviceAdded</tns:event>
+  </tns:transition>
+  
+   <tns:transition isControllable="true">
+    <tns:from>SERVICE_ADDED</tns:from>
+    <tns:to>CARD_RELEASED</tns:to>
+    <tns:event>goBack</tns:event>
+  </tns:transition>
+  
+</tns:domainProperty>

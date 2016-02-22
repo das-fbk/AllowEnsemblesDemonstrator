@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="../../../../schema-allow-ensembles/schema/allow-ensembles/Routes.xsd">
+	<!-- USER 1: From Lavis to Poli Parking by Car"-->
+	<!--STARTING POSITION:  "lat":"46.146448","lon":"11.097186999999963" -->
+			<route id="1" color="#FF0000" noOfChanges="0" utility="0.0">
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="car" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>__txGwlvbAD]bBVPPDNCJAPBTDJHHJBJANMDOBSCOEM@_@?YCs@?oBJi@Ga@B}BJoAbBIn@FXPRXBPHNJHLDJ?PGNWDU@QCUBg@Hk@h@s@`@s@`@_AlCmIf@aBh@eBZkAL]HMHSDCBCDGFGBCBCDAFAFABCDG@E?E?KCGAGCEAQ?O@Yl@oBh@gBf@aBZcAL[N]N[l@aAr@u@`Ao@\Ql@YdA_@bA_@VKNEjAe@~@]`@QbC_AxB_ArBs@LEJEbEaBHCDAzAYPCPA^Av@CbCDl@@rBj@pDbA|Ab@NDnJhC`MzGfChAt@TXFnQpDxHfB~Cf@L?x@BjACvAGtAI\ATAl@EbHa@VARANAb@Cd@C~AGxCSnCk@vCw@B?f@MvBe@~Cu@bGwAtKkCjQkET?LDJFDRAj@UZYPm@Vo@FOBGHELPj@DRHVFTZlABF\Y	
+			</geometry>
+		</leg>
+	</route>
+<!-- USER 1: From Poli to Gardolo (FLexiBus PickUp Point)"-->	
+	<route id="2" color="#FF0000" noOfChanges="0" utility="0.0">
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="walk" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>q~kxGcoxbA]XCG[mAGUIWESQk@K_@G_@CIE[MeAI{@Go@CQKmAGe@Ce@COMoA??OqAC_@CMAEEC@E@K?KAKEIGGIAE?SOQa@CYCGEDOI</geometry>
+		</leg>
+	</route>	
+	
+  <!--USER 2 FROM HOME TO FLEXI BUS STOP WALKING-->	
+  <!--STARTING POSITION:	"lat":"46.106173","lon":"11.11597699999993" -->
+	<route id="3" color="#FF0000" noOfChanges="0" utility="0.0">
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="walk" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>qblxGyazbAXv@e@hAM\c@`Aa@`AMZCBWn@cA`CCNRdBEDOI</geometry>
+		</leg>
+	</route>
+
+			
+  <!-- DRIVER A FROM GARDOLO TO STAZIONE FS-->	
+  <!--STARTING POSITION:  "lat":"46.107239","lon":"11.112896999999975" -->
+	<route id="4" color="#FF0000" noOfChanges="0" utility="0.0">
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="walk" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+		<geometry>}elxGwwybAlDgI|@eBzAkAhD{A`DyA~EsA~@YpJcBnEy@lBo@h@B?XPXVKJ]ISNU\Q`Bg@RCbIiAbHoBh@?rGAdMC~@QdB_@r@EjDL|C_Bb@W`BXpAETInDmDb@e@bAu@jAIXnFf@zK}C`B_@Li@?]C[LUj@Hr@JN`@JXOVs@\s@`HeDvX{MzMsGrCpBvDtBzCbBxBtAlC`BIh@L\tDtBZmA</geometry>
+	</leg>	
+</route>
+
+ <!-- DRIVER A FROM STAZIONE FS TO PALATRENTO-->	
+	<route id="5" color="#FF0000" noOfChanges="0" utility="0.0">
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="walk" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+		<geometry>ekexGuwzbAHDfGq@h@BXSjAWxBU`@?`@AZS|AkBlA{@SgBXw@?G?gAdACvAYGqAs@{L[sF@eAp@\tFvCh@LbCwN~CpA|B|@~@n@Tk@hBuBv@_AbLsSx@\fHxC^_C~@iGRBLQlFrGAb@H\XLPnAfAhIvFaClDw@tD?VAhCQdAUbDyAb@UxBsARZJAJI?g@^[j@S~A@zF\^BhGJd@JfAAz@ATH`J}@jCYj@DZNt@v@Ef@FZRNX?JQDe@lGvAt@GnGo@lDHpDb@pA?dAEXC|Ak@lAy@nAa@lJsBVFHX@f@Gl@iKxWMdAHbAXj@]ZQr@?fATf@h@\l@AxAs@\e@Lm@M{AUWw@[OYA[Ds@^s@F]C]O_@YOoA@q@^]pCc@jB{@vAwFxEoAb@}Ch@</geometry>
+</leg>	
+</route>
+
+<!-- USER 3 FROM VIA BRESCIA TO STAZIONE FS VIA BIKE-->	
+	 <!-- STARTING POSITION:46.07150320430332, 11.108670361493196 -->
+	<route id="6" color="#FF0000" noOfChanges="0" utility="0.0">
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="walk" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+		   <geometry>adexGadybA?a@@U?[?MAMAUMcAKe@I_@Ic@Ec@AU@YDo@PeAHW?O@MFSDILGJCNBHFN{@@Ez@iF@GBYAAACCEAE@Q@GDGBAC]KUCIIQMUIQISG[AYBM@K@E\}AB_@Cc@Ie@u@gDOw@O[MUkAPU@cAFI?iA{@MK@IKGOKe@[KME?@Y</geometry>
+	</leg>	
+</route>
+
+<!-- DRIVER B FROM POVO PIAZZA MANCI TO PORTAQUILA-->
+	 <!-- STARTING POSITION:46.065971,11.15458000000001 -->
+<route id="7" color="#FF0000" noOfChanges="0" utility="0.0">
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="walk" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+		    <geometry>yfdxGusacA^r@b@d@z@xAdAbCxAbFhA@j@CtBOxEPP`AD~ALz@PjAoCx@iCFcA@GWQIUXF^LH@d@O~FOj@o@LyCm@mA@qA~@{AfBG|@B\Vt@t@jATX`FjGLh@AfA_BbPMdAYjBQXSJiDZ}BFQHUn@UbCKx@Q`@]Jm@C[Ss@kCqByCi@Wc@Fa@Vw@|@[ZaAv@OQUBKT?ZRXRERLdB~ALf@NdCEh@Ud@mBz@QPElAJh@`@NpC^bFl@xFYVA^PhArBT|@^fCB~@IfBSp@oA`@Q`@EbAFr@Bj@MlAaClHgB`De@h@yAbA_HnCIx@</geometry>
+</leg>	
+</route>
+
+<!-- DRIVER B PORTAQUILA TO PALATRENTO-->	
+<route id="8" color="#FF0000" noOfChanges="0" utility="0.0">
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="walk" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+		    <geometry>q|dxGeq|bARK~@_@z@a@zAo@v@_@\]LMDHBELQELFDGd@CxAzAbAFQLa@Le@DBHD@C@A@A@?B?BM@E`Br@vB~@NF`CfALD@GJHLFABCPrAl@FBp@Z@?dBv@pAn@\\l@x@j@`AL^Rt@HVHG|@y@z@y@`EyDHIDEPQtCqCDHDG~ChFJNFL\c@B?BEZj@n@p@`CvBZXnAfAz@t@bFvElAjAlAfAjAdAJJn@Xl@L`AbAj@f@ZXV\|AhA@@JFFKHI@NBPDHFH|@h@fBfAHFp@Vx@Xb@F`@@TCXDh@Zp@`@d@f@VRXFr@NrBx@VFt@Jd@@f@C`@I`@M\OLIBJzAgA|CqBbAq@~@q@dAw@VSRYJGLCLKpEaD^WpDeBpAi@XQ\QXGnAQA\?f@AlBbA@</geometry>
+</leg>	
+</route>
+
+<!-- USER4 WALK FROM VIA MADONNINA TO PIAZZA MANCI POVO -->	
+	<!-- STARTING POSITION:46.064879, 11.15671599999996-->
+<route id="9" color="#FF0000" noOfChanges="0" utility="0.0">
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="walk" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+		   <geometry>m`dxGm`bcA[^DHINIRNnAAlAIbAE|BDNMRe@Di@CEFIF??o@y@IK</geometry>
+		   </leg>	
+</route>
+
+
+<!-- USER 5 CAR FROM TAVERNARO TO VILLAZZANO -->
+	<!-- STARTING POSITION: 46.081962,11.153067999999962-->
+<route id="10" color="#FF0000" noOfChanges="0" utility="0.0">
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="car" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+		   <geometry>qkgxGgiacADi@Ji@N_ANORa@N_@N_@X?f@Ah@XRTTh@\n@NTZ@RWPg@`@_BHSJKXKJBZh@N^f@^\j@Vb@RV@@LNXlA`AbCbAdCvAtBd@p@nApB`AdCvBjHJr@H|@DzB?H@R?P@HCzBAn@MfB?`@?^BVDb@L`@Z~@JZFVJf@EFAH@HBDB@D?DN@VC^CVC\ATEvAClAARCt@?t@@b@?T@V@DHh@Jh@PbAFt@FjB@H@d@@\Dz@Jv@P\NJNFRDL?LCp@c@RKNMb@e@n@oBLS@LJPF@FADGDI?KAMGIICDUd@y@JQLIR?FBNTfBjEHRLTJLNDVBl@@p@@H?RI^[FE|@s@PUFIBGDMFUBMT}AHKTHTFd@HF@H@LAB?@FBFBDBBD@B@D?DAFCDIBI?I?KAK@ATSt@q@|@y@LKPILCHAJ?J?RFNHNLRXrA~BNZNd@HXJNFHLFLDH?JALCLIDEDGDIFOBk@H}ABWDSDMFKHIFGFCJCZ?^@JAf@GXEXClBITENMJWLiABYFe@PgB@KHy@LgABUJ}@RoBV}BFs@I{@Qi@Y_@gD_EQSCEAA}@oA]s@E]A]@QDYH[NY~@w@p@o@LKPEPCP?R@Z@d@D|Ah@NBN?LCJGFOJSBa@DiAHeC?S@q@FCDGBI@I`ACD?`@AX?j@CTCPE\Iz@YLEHERGb@CLA|N^j@Db@P|At@hCtAHDr@^p@XBB`@L~AV~AJ`@B\Bd@D^Bz@D~CRfBp@fAbA^f@\p@`@t@d@z@d@z@Vd@DJh@~@r@rAR\Tb@BFb@v@Xd@HJHFp@l@FF\Pd@Pb@Ll@PFJLDBHDFDBJ?LDTFLJPFJFRFp@Pj@NPDTJTLVPTRHHDDPRRZNXXh@d@n@RR@Bv@R^JhA\\JRJPJPLPNJHr@l@PJ`@RZJXFdAT`@Df@Fl@Fj@XNLLRHNBFPh@@DL~@Hn@E@IHCHAJ?LDPFHHBNA</geometry>
+		   </leg>	
+</route>
+
+<!-- USER 5 CAR FROM VILLAZZANO TO PALATRENTO -->	
+<route id="11" color="#FF0000" noOfChanges="0" utility="0.0">
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="car" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+		   <geometry>wb`xGmu~bA??rAFb@@p@BZ@?LDPFHHBNABEHQ?YEON]FMFODEJMJGPK`Am@\i@BE`@cAd@gALGRKRGP@H@T@RCVGb@Sb@]z@q@TITCNCR?N@B@HBLJJNFLDN@D@d@CPANBLDNH@\N`@XFHTZDFPR\`@PVHJh@p@TVHNJRHZDZB\?\OfDCd@EVKRKLKHMBM@OAc@IKCKCEAS?KFKFGLCJETAN?@?LBNBLF\Lv@RlAF`@?BJn@Fd@JXLRp@v@\f@h@l@p@p@PNNJf@`@p@f@v@j@FLP`@BPDHHDB?HAHIBGXILGj@DLAvBt@t@Tn@F\?\Ah@CLDLBTFh@Tp@VxAf@d@Nr@JV@b@B\?VA\BPN?TATIJELCN?RDRDFGZM\[TQTKRoGpPw@pBm@`BITELCRAR?V?NBLBLBNBV?VCXQ^]VSBKAK@OBEC?E_@JYPO@IGCImB`BeCrBIDIBmANk@DUDG?SBA?}@Ji@FaK`B@V@T@ZoAD</geometry>
+</leg>	
+</route>
+
+<!-- USER 6 BIKE FROM MARTIGNANO TO PORTAQUILA -->	
+<!-- STARTING POSITION:	46.083462,11.127786000000015 -->
+<route id="12" color="#FF0000" noOfChanges="0" utility="0.0">
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="car" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+		   <geometry>etgxGsk|bADBLDJSrD?JGH?fASp@UZSR[L_@JWTM^MJKDU@[NDTEp@WvAy@LITBtAk@dAi@LGl@Ab@@|@Dd@IX?~@QF_@@}@NBVFP@\BxATt@Ll@TPNLVt@?\?LBvB`BL@T\`@RRDXKd@?TDTXBLDBN@NH^Tl@h@PTJT?DBL@JGH?Jt@ED?FHL@@D@DD?F?NAL?F?HABAJKNI@?FCNIj@f@r@b@B@F@DFLF`@C^EpA[h@Id@Gd@@D?L??ML@N@B?@A?E@C@c@</geometry>
+</leg>	
+</route>
+
+<!-- USER4_BIS WALK FROM VIA SALE' TO PIAZZA MANCI POVO -->	
+	
+	<!-- STARTING POSITION: 46.063946,11.151904999999942-->
+<route id="13" color="#FF0000" noOfChanges="0" utility="0.0">
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="walk" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+		 <geometry>uzcxG{bacAE?a@Ba@BQ@K]sAkEAKo@_B]o@m@_AQQo@y@IK</geometry>
+		   </leg>	
+</route>
+		
+		
+		</routes>
+		
+							

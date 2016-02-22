@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:fragment id="FC_routeAssignment" xmlns:tns="http://das.fbk.eu/Fragment" xmlns:tns1="http://das.fbk.eu/Annotation" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://das.fbk.eu/Fragment Fragment.xsd ">
+  
+  		<tns:state isInitial="true" name="ST0"/>
+		<tns:state name="ST1"/>
+		<tns:state name="ST2"/>
+		<tns:state name="ST3"/>
+	
+	
+		<tns:action name="FC_RouteAssignmentRequest" actionType="input">
+			<tns:precondition>
+				<tns1:point>
+					<tns1:domainProperty dp_name="FlexibusTrip">
+						<tns1:state>DRIVER_LOGGED_IN</tns1:state>
+					</tns1:domainProperty>
+				</tns1:point>
+			</tns:precondition>
+		</tns:action>
+
+		<tns:action name="FC_RouteAssignmentReply" actionType="output">
+<!-- 			<tns:effect> -->
+<!-- 				<tns1:event dpName="FlexibusTrip" eventName="routeAssignment"></tns1:event> -->
+<!-- 			</tns:effect> -->
+		</tns:action>
+		
+		<tns:action name="FC_TakeFlexibus" actionType="abstract">
+		<tns:goal>
+			<tns1:point>
+				<tns1:domainProperty dp_name="FlexibusDriverStatus">
+					<tns1:state>
+						FLEXIBUS_TAKEN
+					</tns1:state>
+				</tns1:domainProperty>
+			</tns1:point>
+		</tns:goal>
+		<tns:effect>
+			<tns1:event dpName="FlexibusTrip" eventName="routeAssignment"></tns1:event>
+		</tns:effect>
+	</tns:action>
+	
+	<tns:transition>
+		<tns:initialState>ST0</tns:initialState>
+		<tns:finalState>ST1</tns:finalState>
+		<tns:action name="FC_RouteAssignmentRequest"  actionType="input"/>
+	</tns:transition>
+
+	<tns:transition>
+		<tns:initialState>ST1</tns:initialState>
+		<tns:finalState>ST2</tns:finalState>
+		<tns:action name="FC_RouteAssignmentReply"  actionType="output"/>
+	</tns:transition>
+	
+	<tns:transition>
+		<tns:initialState>ST2</tns:initialState>
+		<tns:finalState>ST3</tns:finalState>
+		<tns:action name="FC_TakeFlexibus"  actionType="abstract"/>
+	</tns:transition>
+
+</tns:fragment>

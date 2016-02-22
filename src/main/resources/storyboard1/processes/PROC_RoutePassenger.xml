@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:process name="RoutePassenger_Core" role="true" xmlns:tns="http://das.fbk.eu/Process"
+	xmlns:tns1="http://das.fbk.eu/Annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://das.fbk.eu/Process Process.xsd ">
+
+	<tns:receive name="RP_PassengerDetails">
+		<tns:precondition>
+			<tns1:point>
+				<tns1:domainProperty dp_name="RoutePassengerStatus">
+					<tns1:state>INITIAL</tns1:state>
+				</tns1:domainProperty>
+			</tns1:point>
+		</tns:precondition>
+	</tns:receive>
+	<tns:concrete name="RP_EnterInRouteEnsemble" />
+	<tns:invoke name="RP_DetailsConfirmed">
+		<tns:effect>
+			<tns1:event dpName="RoutePassengerStatus" eventName="setupDetails"></tns1:event>
+		</tns:effect>
+	</tns:invoke>
+	<tns:receive name="RP_PickupPointCheckIn">
+		<tns:precondition>
+			<tns1:point>
+				<tns1:domainProperty dp_name="RoutePassengerStatus">
+					<tns1:state>PASSENGER_DETAILS_DEFINED</tns1:state>
+				</tns1:domainProperty>
+			</tns1:point>
+		</tns:precondition>
+	</tns:receive>
+	<tns:invoke name="RP_PickupPointCheckInAck">
+		<tns:effect>
+			<tns1:event dpName="RoutePassengerStatus" eventName="reachPickupPoint"></tns1:event>
+		</tns:effect>
+	</tns:invoke>
+	
+	<tns:receive name="RP_WaitFlexibusRequest">
+		<tns:precondition>
+			<tns1:point>
+				<tns1:domainProperty dp_name="RoutePassengerStatus">
+					<tns1:state>PICKUP_POINT_REACHED</tns1:state>
+				</tns1:domainProperty>
+			</tns1:point>
+		</tns:precondition>
+	</tns:receive>
+	<tns:invoke name="RP_WaitFlexibusReply">
+		<tns:effect>
+			<tns1:event dpName="RoutePassengerStatus" eventName="waitFlexibus"></tns1:event>
+		</tns:effect>
+	</tns:invoke>
+	
+	<tns:receive name="RP_CheckInOnFlexibusRequest">
+		<tns:precondition>
+			<tns1:point>
+				<tns1:domainProperty dp_name="RoutePassengerStatus">
+					<tns1:state>FLEXIBUS_ARRIVED</tns1:state>
+				</tns1:domainProperty>
+			</tns1:point>
+		</tns:precondition>
+	</tns:receive>
+	<tns:abstract name="RP_CheckInOnRoute">
+		<tns:goal>
+			<tns1:point>
+				<tns1:domainProperty dp_name="HandleRoute">
+					<tns1:state>
+						PASSENGER_CHECKED_IN
+					</tns1:state>
+				</tns1:domainProperty>
+			</tns1:point>
+		</tns:goal>
+	</tns:abstract>
+	
+	<tns:concrete name="RP_EnterInFlexibusOnMap" />
+	
+	<tns:invoke name="RP_CheckInOnFlexibusAck">
+		<tns:effect>
+			<tns1:event dpName="RoutePassengerStatus" eventName="checkInOnFlexibus"></tns1:event>
+		</tns:effect>
+	</tns:invoke>
+	<tns:receive name="RP_CheckOutRequest">
+		<tns:precondition>
+			<tns1:point>
+				<tns1:domainProperty dp_name="RoutePassengerStatus">
+					<tns1:state>PASSENGER_CHECKED_IN</tns1:state>
+				</tns1:domainProperty>
+			</tns1:point>
+		</tns:precondition>
+	</tns:receive>
+	<tns:invoke name="RP_CheckOutAck">
+		<tns:effect>
+			<tns1:event dpName="RoutePassengerStatus" eventName="reachDestination"></tns1:event>
+		</tns:effect>
+	</tns:invoke>
+	<tns:concrete name="RP_ExitFromRouteEnsemble" />
+</tns:process>

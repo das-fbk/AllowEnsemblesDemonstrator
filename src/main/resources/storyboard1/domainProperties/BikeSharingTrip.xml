@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:domainProperty id="BikeSharingTrip" xmlns:tns="http://das.fbk.eu/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://das.fbk.eu/Process ../../../../../../../schema-allow-ensembles/schema/allow-ensembles/DomainProperty.xsd ">
+  
+  <tns:state isInitial="true">INITIAL</tns:state>
+  <tns:state>USER_REGISTERED</tns:state>
+  
+  <tns:event>userRegistration</tns:event>
+  
+  <tns:transition isControllable="true">
+    <tns:from>INITIAL</tns:from>
+    <tns:to>USER_REGISTERED</tns:to>
+    <tns:event>userRegistration</tns:event>
+  </tns:transition>
+  
+</tns:domainProperty>

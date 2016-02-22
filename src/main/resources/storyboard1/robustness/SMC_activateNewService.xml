@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robustnessAnnotation>
+	<fragment name="SMC_activateNewService.xml">
+		<activity name="SMC_ActivateServiceRequest" compensable="true" deterministic="false" write="true" robustness="94"/>
+	</fragment>
+	<fragment name="SMC_activateNewService.xml">
+		<activity name="SMC_ActivateServiceReply" compensable="true" deterministic="false" write="true" robustness="92"/>
+	</fragment>
+</robustnessAnnotation>

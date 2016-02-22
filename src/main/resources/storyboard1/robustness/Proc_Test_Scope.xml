@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robustnessAnnotation>
+	<process name="Proc_Test_Scope.xml">
+		<activity name="Concrete_1" compensable="true" deterministic="false" write="true" robustness="91"/>
+	</process>
+	<process name="Proc_Test_Scope.xml">
+		<activity name="Concrete_2" compensable="true" deterministic="false" write="true" robustness="97"/>
+	</process>
+	<process name="Proc_Test_Scope.xml">
+		<activity name="Concrete_3" compensable="true" deterministic="false" write="true" robustness="91"/>
+	</process>
+</robustnessAnnotation>

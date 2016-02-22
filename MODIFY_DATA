@@ -1,0 +1,95 @@
+= Modify data =
+
+How to modify storyboard-related data into demonstrator
+
+== Storyboards main file ==
+
+Allow Ensembles demonstrator load storyboards from a scenario file, right now this one:
+
+/demonstrator/src/main/resources/storyboard1/Storyboard1-main.xml
+
+In this file are defined all files used by storybard, like Storyboard routes and Storyboard scenario.
+
+=== Storyoard routes ==
+This file contains all routes (or journey alternatives) used by Demonstrator.
+Each route are defined by the following format:
+
+	<route id="1" color="#FF0000" noOfChanges="0" utility="0.0">
+		<leg Cost="0" duration="1920" walkingDistance="0">
+			<transportType type="bicycle" />
+			<safety_parameters>
+				<safety_level>0</safety_level>
+				<sparseness_level>0.0</sparseness_level>
+				<pollution_level>0</pollution_level>
+			</safety_parameters>
+			<privacy_parameters>
+				<provider>provider</provider>
+			</privacy_parameters>
+			<geometry>imlxGskxbAEyBSq@CcBCq@AUEaBJiAAyACaAOqDCQ|Bg@dAW^Gb@KHCDEBEDBL?HARIvCo@d@I|Bg@nAY@JvASx@@F?F?zCBbFDdB@~@@|B@hD?vC@lABCpAFCv@YLlAy@NUB@Kd@MfFqAvCs@bCy@hFaCBA`CgAfCkA\UBCPIx@]rBcAHEJErAq@^Qb@StAs@fFeCvCyApAm@NGd@UpDcB~E_CTEN@ZFLHJ@HAJEHIFKFEDCLE?E?O@IBEDAFA@KBGDEVMbBy@LGTKVMHEFCJERKHEHEVMRYtAm@LGHEpBaAvDiBbIwDPILGTGr@[b@UBABClAk@BABAVMBADCHCPKBABAbAg@JGLGDADCzBgAjC~ADI@CDIFBJFF]J]HQLSP]HMHKDCDCFAH?H@TL\TDDDF@FBHL?FAJ@HBLHvAz@j@^NJFDDDNHtEhCBM@G@GxAwGBQNHH_@BKDSJOZk@HYDMH]Hi@DU@OJeBBQFOHQJO`@Y`B_An@]|@YJGx@u@b@a@NMJCV@ZDD?JCVQD?H@ZJJ?JIDKBKBWxAr@|DhBVLNHCF?J@JBFDFDBH@F?DABEBERHj@XnB~@\Pl@Vf@Tf@TdCuNLFrAl@FBp@Z@?dBv@pAn@T[@AnAqAf@q@DGb@y@HM~AiCHMJOlAwB@CR]BEDIFKBEXe@BEt@sAj@iAf@eADIv@Z|GrCRHD[T{A??f@kDRkAF[J@DAFGDI@G?KLEHC
+			</geometry>
+		</leg>
+	</route> 
+
+where:
+
+* id: is the unique identificator for route inside demonstrator
+* color: the unique color for display route on map
+* noOfChanges: number of changes for route
+* utility: base utility for route, default is 0.0, because Utility component compute during demonstrator execution
+* leg tag: each route are defined with one or more legs, and for each leg
+	* cost: euros to be paid for this leg
+	* duration: duration of the leg in minutes
+	* walkingDistance: meters to be walked
+	* transportType tag: define type of transport for this leg, from the following: car, bicycle, walk, bus, carSharing, train
+	* safety_parameters tag: define all safety related informations
+		* safety_level: safety level for this leg
+		* sparseness_level: sparsness level for this leg
+		* pollution_level: pollution level for this leg
+	* privacy_parameters tag:
+		* provider: name of the provider
+	* geometry: value of this tag is che encoded geometry for the leg (please see "Geometry Leg" section)  	
+
+== Scenario file ==
+Scenario file contains all domain object definitions and all instances to be loaded on startup, in the following format:
+
+	<tns:domainObject file="domainObjects/User">
+		<tns:domainObjectInstance id="User_1"  lat="46.10826" long="11.11055" preferenceFile="preferences/User1_preference.xml" />
+
+where:
+
+* domainObject tag: in the file attribute contains link with the Domain Object definition file, into relative folder "domainObjects" and file "User"
+* domainOjectInstance: in order to pre-laod demonstrator with user instances, define:
+	* id: unique user identifier. Id are composed of a prefix with "User_" for user domain object
+	* lat: starting latitude position for user icon on map
+	* long: starting longitude position for user icon on map
+	* preferenceFile: link to user preference file
+	
+== Geometry leg ==
+In order to get new geometry leg it's important to understand that geometry (in our case a multipolyline), 
+it's encoded using google method (please see /demonstrator/src/main/java/eu/allowensembles/presentation/main/map/util/GoogleMapsDecoder.java for information about decoding).
+
+To get this geometry, for Trento, it's possible to use FBK Smart Community WebPlanner, here:
+https://dev.smartcommunitylab.it/core.mobility/webplanner#/
+
+Note: using inspect capabilities for modern browsers it's possible to intercept into network communication encoded geometry for selected journey alternatives
+
+To get geometry, call using a rest client with following parameter:
+
+* url: https://dev.smartcommunitylab.it/core.mobility/plansinglejourney
+* body: {"from":{"lat":"46.071893","lon":"11.119564999999966"},"to":{"lat":"46.067414","lon":"11.150570000000016"},"routeType":"fastest","resultsNumber":3,"date":"07/06/2015","departureTime":"11:17AM","transportTypes":["TRANSIT"]}
+* headers:
+	Content-Type application/json;charset=utf-8
+	
+In response there will be geometry encoded, and to be used in storyboard routes
+
+== Coordinates file ==
+It's possibile inside Demonstrator to add new user, using right click and then add new entities.
+Coordinates for new User instances are retrieved from coordinates.properties file here:
+
+/demonstrator/src/main/resources/storyboard1/coordinates.properties
+
+In this file coordinates are just a pair of key, in following format:
+
+key: number, progressive and unique into file
+value: a comma separated value of latitude and longitude
+	

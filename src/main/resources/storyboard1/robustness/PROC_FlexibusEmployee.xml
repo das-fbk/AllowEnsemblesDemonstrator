@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robustnessAnnotation>
+	<process name="PROC_FlexibusEmployee.xml">
+		<activity name="EMPLOYEE_PlanWorkingDay" compensable="true" deterministic="false" write="true" robustness="97"/>
+	</process>
+	<process name="PROC_FlexibusEmployee.xml">
+		<activity name="EMPLOYEE_ExecuteRoute" compensable="true" deterministic="false" write="true" robustness="97"/>
+	</process>
+</robustnessAnnotation>
