@@ -1,4 +1,4 @@
-==Allow Ensembles Demonstrator==
+# Allow Ensembles Demonstrator
 
 IMPORTANT NOTE: this version have manual dependencies inside lib folder, please read with attention following notes
 
@@ -6,20 +6,20 @@ IMPORTANT NOTE: this version have manual dependencies inside lib folder, please 
 Demonstrator for Allow Ensembles project, see http://www.allow-ensembles.eu/
 
 
-=Dependencies=
+## Dependencies
 
 Project dependencies are inside lib folder, please add them to your Eclipse project
 
 
-=How to build=
+## How to build
 
 To build Allow Ensembles Demonstrato you need to install Maven 3.2.x, Java JDK 1.8.x, Eclipse and set
 dependencies.
 
 
-=How to configure=
+## How to configure
 
-==Mac configuration==
+### Mac configuration
 
 In order to run composer component inside Allow Ensembles demonstrator, on system must be configured wine (1.6.2), because runs 
 a small executable included inside demonstrator, wsynth.
@@ -30,7 +30,7 @@ macwsynthPath=/opt/local/bin/wsynth.exe
 
 
 
-=How to run=
+# How to run
 
 Main entry point for demonstrator is here:
 
