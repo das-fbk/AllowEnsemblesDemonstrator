@@ -5,6 +5,7 @@ IMPORTANT NOTE: this version have manual dependencies inside lib folder, please 
 
 Demonstrator for Allow Ensembles project, see http://www.allow-ensembles.eu/
 
+![Allow Ensembles Demonstrator](img/img01.png)
 
 ## Dependencies
 
