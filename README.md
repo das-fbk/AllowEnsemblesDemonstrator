@@ -42,3 +42,8 @@ when Demonstrator is started, select File-> Open from menu and select scenario f
 
 To run example process, please press STEP
 
+
+# License
+
+Please see COPYRIGHT file
+
