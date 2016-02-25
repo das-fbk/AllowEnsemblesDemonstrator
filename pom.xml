@@ -87,21 +87,26 @@
 			<version>4.8.1</version>
 			<scope>test</scope>
 		</dependency>
-<!-- 		<dependency> -->
-<!-- 			<groupId>com.mxgraph</groupId> -->
-<!-- 			<artifactId>jgraphx</artifactId> -->
-<!-- 			<version>3.3.0.0</version> -->
-<!-- 		</dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>com.mxgraph</groupId> -->
+		<!-- <artifactId>jgraphx</artifactId> -->
+		<!-- <version>3.3.0.0</version> -->
+		<!-- </dependency> -->
+		<dependency>
+			<groupId>com.github.jgraph</groupId>
+			<artifactId>jgraphx</artifactId>
+			<version>v3.3.0.0</version>
+		</dependency>
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
 			<version>18.0</version>
 		</dependency>
-<!-- 		<dependency> -->
-<!-- 			<groupId>eu.fbk.das</groupId> -->
-<!-- 			<artifactId>process-engine-impl</artifactId> -->
-<!-- 			<version>0.0.1-SNAPSHOT</version> -->
-<!-- 		</dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>eu.fbk.das</groupId> -->
+		<!-- <artifactId>process-engine-impl</artifactId> -->
+		<!-- <version>0.0.1-SNAPSHOT</version> -->
+		<!-- </dependency> -->
 		<dependency>
 			<groupId>com.vividsolutions</groupId>
 			<artifactId>jts</artifactId>
@@ -111,8 +116,35 @@
 			<groupId>javax.xml</groupId>
 			<artifactId>jaxb-impl</artifactId>
 			<version>2.1</version>
-		</dependency>		
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>1.3.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.graphstream</groupId>
+			<artifactId>gs-core</artifactId>
+			<version>1.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.graphstream</groupId>
+			<artifactId>gs-ui</artifactId>
+			<version>1.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.graphstream</groupId>
+			<artifactId>gs-algo</artifactId>
+			<version>1.3</version>
+		</dependency>
 	</dependencies>
 
+
+	<repositories>
+		<repository>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
+		</repository>
+	</repositories>
 
 </project>
